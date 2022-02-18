@@ -1,9 +1,96 @@
 .nav
-	&__item
-		display inline-block
-		margin-right 15px
-		&:last-child
-			margin-right 0
-	&__link
-		display block
-		color $text-color
+	ul
+		li
+			display block
+			border-bottom 1px solid $border-color
+			&:last-child
+				border-bottom none
+			
+		a
+			display flex
+			flex-wrap nowrap
+			align-items center
+			justify-content flex-start
+			text-transform uppercase
+			color $text-color
+			font-size 16px
+			padding 22px 17px
+			img
+				display block
+				flex none
+				width 24px
+				height 24px
+				margin-right 12px
+				transition filter .17s ease-in-out
+			&:hover
+				img
+					filter invert(54%) sepia(68%) saturate(291%) hue-rotate(2deg) brightness(95%) contrast(96%)
+						
+	&-wrapper
+		flex 1
+		margin-left 40px
+		margin-right 30px
+		
+		
+	&-dropdown
+		position absolute
+		top 100%
+		left 0
+		min-width 370px
+		background-color $basic-white-color 
+		transition all .17s ease-in-out
+		margin-top 10px
+		opacity 0
+		visibility hidden
+		pointer-events none
+		box-shadow 6px 19px 30px rgba(0, 0, 0, 0.05)
+		&__wrapper
+			position relative
+			margin-bottom -25px
+			//width 200px
+			&:hover
+				.nav-dropdown
+					margin-top 0
+					opacity 1
+					visibility visible
+					pointer-events auto
+					&__btn
+						&:before
+							width 100%
+						svg
+							transform rotate(-180deg)
+		&__btn
+			padding-bottom 15px
+			display inline-flex
+			align-items center
+			flex-wrap nowrap
+			justify-content flex-start
+			font 18px $Reg
+			color $text-color
+			position relative
+			padding-right 5px
+			svg
+				display inline-block
+				width 10px
+				height 7px
+				fill none
+				transition transform .17s ease-in-out
+				stroke $text-color
+				stroke-width 1.5px
+				flex none
+				margin-left 10px
+				margin-top 2px
+			&:before
+				height 2px
+				pseudo()
+				position absolute
+				left 0
+				bottom 0
+				width 0
+				transition width .17s ease-in-out
+				background-color $accent-color
+				
+
+
+				
+			
