@@ -4,12 +4,18 @@
 
 .gutters
 	padding $gutters
+	&-lg
+		padding $gutters-lg
 	
 .gutter
 	&-top
 		padding-top $gutter-top
+		&-lg
+			padding-top $gutter-top-lg
 	&-bottom
 		padding-bottom $gutter-bottom
+		&-lg
+			padding-bottom $gutter-bottom-lg
 		
 .main-gutter-top
 	padding-top 90px
@@ -25,12 +31,25 @@
 
 .sect-title
 	font 46px $Tenor
-	line-height 1
-	
+	line-height 51px
+	margin-bottom 30px
+	&.no-margin
+		margin-bottom 0
+		
+.sect-description
+	margin-bottom 35px
+	&.no-margin
+		margin-bottom 0
+		
+
 .title
 	font 60px $Tenor
 	line-height 67px
 	margin-bottom 30px
+	&-h3-size
+		font-size 26px
+		line-height 27px
+		margin-bottom 40px
 
 		
 .text-center
@@ -148,6 +167,14 @@
 				display inline-block
 				margin-right 4px
 				
+	p
+		margin-bottom 25px
+		
+				
 
 .border-bottom
 	border-bottom 1px solid $border-color
+	
+
+.no-margin
+	margin 0

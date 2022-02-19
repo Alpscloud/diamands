@@ -45,5 +45,7 @@
     "stylus-media-queries": "^1.0.0",
     "twig": "^1.11.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "jquery-filepond": "^1.0.0"
+  }
 }

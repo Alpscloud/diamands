@@ -1,16 +1,3 @@
-input[type="search"]
-	appearance none
-	-webkit-appearance none			
-
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration
-	appearance none
-	-webkit-appearance none
-	backface-visibility hidden
-	transform translate3d(0,0,0)
-
 
 
 
@@ -18,77 +5,188 @@ input[type="search"]::-webkit-search-results-decoration
 	&-input
 		display block
 		width 100%
-		padding 10px 15px
+		padding 12px 15px
 		text-align left
-		background-color $light-color
-		border 2px solid transparent
-		font 1em $Reg
+		border 1px solid $input-border-color
+		font 16px $Reg
 		color $text-color
 		&:hover,
 		&:focus
 			border-color $accent-color
 		&::-webkit-input-placeholder
-			font 1em $Reg
-			color $text-color
+			font 16px $Reg
+			color rgba($text-color,.5)
 		&::-moz-placeholder
-			font 1em $Reg
-			color $text-color
+			font 16px $Reg
+			color rgba($text-color,.5)
 		&:-moz-placeholder
-			font 1em $Reg
-			color $text-color
+			font 16px $Reg
+			color rgba($text-color,.5)
 		&:-ms-input-placeholder
-			font 1em $Reg
-			color $text-color
+			font 16px $Reg
+			color rgba($text-color,.5)
 			
-		&.is-error
-			border-color red
+	
+			
+	&-label
+		display block
+		margin-bottom 6px
+		text-transform uppercase
+		font-size 14px
+		
+	&-error
+		color red
+		font-size 12px
+		margin-top 5px
+		display none
 			
 	&-group
 		position relative
-		margin-bottom 10px
-		&:last-child
-			margin-bottom 0
+		margin-bottom 15px
+	
 			
-		&__label
-			display inline-block
-			margin-bottom 5px
+		&.is-error
+			.form-input
+				border-color red
+			.form-error
+				display block
+			
+		
 			
 	&-textarea
-		min-height 200px
+		min-height 125px
+		
+	&-groups
+		&__row
+			margin-left -7.5px
+			margin-right -7.5px
+			
+			
+			.form-group
+				padding-left 7.5px
+				padding-right 7.5px
+				
+				.btn
+					width 100%
+					padding-left 10px
+					padding-right 10px
+				
+	&-file
+		display block
+		width 100%
+		.btn
+			padding-top 14px
+			padding-bottom 14px
+		input
+			display none
 	
 
+.hidden-label
+	opacity 0
 
+.form-select
+	position relative
+	&:after
+		pseudo()
+		pointer-events none
+		width 8px
+		height 3px
+		background url('../img/icons/svg/select-arrow.svg') no-repeat / contain
+		vertical-center()
+		transition transform .17s ease-in-out
+		position absolute
+		right 15px
+	&.is-opened
+		&:after
+			transform translateY(-50%) rotate(-180deg)
+		.form-select__options
+			opacity 1
+			visibility visible
+			pointer-events auto
+	&__options
+		position absolute
+		top 100%
+		transition all .17s ease-in-out
+		background-color $basic-white-color
+		box-shadow 6px 19px 30px rgba(0, 0, 0, 0.05)
+		z-index 5
+		width 100%
+		opacity 0
+		visibility hidden
+		pointer-events none
+		li
+			display block
+			padding 15px
+			text-transform uppercase
+			border-bottom 1px solid $border-color
+			transition background-color .17s ease-in-out
+			&:last-child
+				border-bottom none
+			&:hover
+				cursor pointer
+				background-color $border-color
+
+
+.form-submit
+	display flex
+	align-items center
+	justify-content flex-start
+	padding-left 7.5px
+	padding-right 7.5px
+	.btn
+		
+		width 100%
+		max-width 270px
+		padding-left 10px
+		padding-right 10px
+
+
+.form-notice
+	color $opacity-text-color
+	font-size 14px
+	line-height 16px
+	text-align left
+	margin-left 24px
+	a
+		color inherit
+		border-bottom 1px solid currentColor
+		&:hover
+			color $accent-color
 
 .form
 	&-checkbox
-		display inline-block
+		display inline-flex
+		align-items center
+		min-height 30px
+		padding-left 46px
+		font-size 16px
 		position relative
-		padding-left 25px
-		font 1em $Reg
-		line-height 1
-		color $text-color
 		&:before
 			pseudo()
 			transition all .17s ease-in-out
 			position absolute
 			left 0
-			vertical-center()
-			border-radius 2px
-			width 16px
-			height 16px
-			border 1px solid $text-color
+			top 0
+			width 30px
+			height 30px
+			border 2px solid $border-color
 			background-position 50% 50%
 			background-repeat no-repeat
-			background-size 12px 12px
+			background-size 18px 13px
+		&:hover
+			&:before
+				border-color $accent-color
 			
 		&__label
 			display inline-block
+			
 			input
 				display none
 				&:checked
 					+ span
 						&:before
-							background-color $text-color
+							background-color $accent-color
+							border-color $accent-color
 							background-image url('../img/icons/svg/checkbox-ic.svg')
 							
 .form
