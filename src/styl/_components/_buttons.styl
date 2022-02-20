@@ -10,6 +10,7 @@
 	background-color $accent-color
 	transition all .17s ease-in-out
 	backface-visibility hidden
+	white-space nowrap
 	svg
 		fill $text-color
 	&:hover
@@ -95,30 +96,27 @@
 		
 
 	&-hamburger
-		display inline-block
+		display none
 		flex none
-		width 50px
-		height 50px
-		border-radius 50%
-		background-color $accent-color
-		position relative
-		transition background-color .17s ease-in-out
-		margin-left 15px
-		&__line
+		width 40px
+		height 40px
+		position absolute
+		vertical-center()
+		right 40px
+		z-index 92
+		span
 			width 27px
 			height 2px
-			background-color $basic-black-color
+			background-color $text-color
 			display block
 			margin 6px auto
 			transition all 0.3s ease-in-out	
 		&.is-active
-			.btn__hamburger--line
+			span
 				&:nth-child(1)
-					transform translateY(8px) rotate(45deg)
+					transform translateY(4px) rotate(45deg)
 				&:nth-child(2)
-					opacity 0	
-				&:nth-child(3)
-					transform translateY(-8px) rotate(-45deg)
+					transform translateY(-4px) rotate(-45deg)
 					
 
 	

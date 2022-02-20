@@ -8,6 +8,8 @@
 		flex none
 		max-width 620px
 		width 100%
+		position relative
+		z-index 2
 	
 	&__btns
 		display flex
@@ -20,6 +22,7 @@
 	&__img
 		width 920px
 		flex none
+		pointer-events none
 		// position absolute
 		// left 100%
 		// vertical-center()
@@ -89,6 +92,10 @@
 	align-items center
 	justify-content space-between
 	padding 12px 12px 12px 40px
+	&:hover
+		.btn
+			background-color $accent-color
+			color $basic-white-color
 	p
 		color rgba($text-color, .6)
 		font-size 16px
@@ -105,6 +112,7 @@
 	&__title
 		font 24px $Med
 		margin-bottom 13px
+		color $text-color
 		a
 			color $text-color
 			&:hover
@@ -170,6 +178,7 @@
 	margin-right -35px
 	.form-wrapper
 		width 100%
+		flex 1
 		max-width 640px
 		padding-left 35px
 		padding-right 35px
@@ -192,7 +201,7 @@
 .advantages-wrapper
 	padding 50px
 .advantages
-	justify-content space-evenly
+	justify-content space-around
 .advantage
 	display flex
 	flex-wrap nowrap

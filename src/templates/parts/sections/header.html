@@ -7,8 +7,25 @@
 
 			{% include '../components/nav.html' %}
 
-			<button class="btn btn-transparent f-f-medium js-open-categories-popup-btn" type="button">Онлайн оценка</button>
+			<div class="header-btn row align-horisontal-end align-vertical-center row-nowrap">
+				<div class="header-contacts">
+					<a href="tel:+380 63 77 77 763" class="phone-link">+380 63 77 77 763</a>
+
+					{% include '../components/socials.html' %}
+				</div>
+
+				<button class="btn btn-transparent f-f-medium js-open-categories-popup-btn" type="button"><span>Онлайн</span> оценка</button>
+			</div>
+
+			
 		</div>
+
+		<!-- Mobile menu btn -->
+		<button type="button" class="btn-hamburger js-open-mobile-menu-btn">
+			<span></span>
+			<span></span>
+		</button>
+		<!-- //Mobile menu btn -->
 	</div>
 
 </header>

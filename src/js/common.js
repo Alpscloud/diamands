@@ -45,6 +45,14 @@ $(document).ready(function() {
 	});
 	// ========= =========== =========== ===========
 
+	$('.js-open-mobile-menu-btn').on('click', function(e) {
+		e.preventDefault();
+
+		$(this).toggleClass('is-active');
+		$('.js-nav').toggleClass('is-opened');
+		$('html').toggleClass('is-fixed');
+	});
+
 	if ($('.js-select').length > 0) {
 		$('.js-select').on('click',  function(e) {
 			$(this).toggleClass('is-opened');
