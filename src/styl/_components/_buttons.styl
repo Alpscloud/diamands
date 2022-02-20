@@ -50,8 +50,14 @@
 		display inline-block
 		width 20px
 		height 20px
-		background url('../img/icons/svg/close-ic.svg') center center no-repeat
-		background-size 20px 20px
+		svg
+			svg()
+			fill none
+			stroke $text-color
+			stroke-width 2.5px
+		&:hover
+			svg
+				stroke $accent-color
 		
 
 	&-top
