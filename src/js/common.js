@@ -87,12 +87,20 @@ $(document).ready(function() {
 
 	if ($('.js-feedbacks-slider').length > 0) {
 		var feedbacksSlider = new Swiper('.js-feedbacks-slider', {
-			slidesPerView: 'auto',
+			slidesPerView: 1,
 			loop: true,
 			navigation: {
 				nextEl: '.js-feedbacks-slider-btn-next',
 				prevEl: '.js-feedbacks-slider-btn-prev',
 			},
+			breakpoints: {
+				992: {
+					slidesPerView: 'auto'
+				},
+				700: {
+					slidesPerView: 2
+				}
+			}
 		});
 	}
 

@@ -89,6 +89,18 @@
 				margin-top 8px
 				font-size 16px
 				
+
+	.consultation-form
+		padding 50px
+		
+	.consultation-img
+		max-width 450px
+
+
+
+
+
+				
 +max-screen(1024px)
 				
 	.description-information__row
@@ -117,7 +129,7 @@
 		line-height 39px
 		
 	.gutter-bottom-lg
-		padding-bottom 90px
+		padding-bottom 120px
 		
 	// Header
 	.header
@@ -273,7 +285,128 @@
 			width 100%
 			
 				
-					
+	.form-wrapper
+		&__row
+			flex-wrap wrap
+			
+			.form-wrapper
+				flex none
+				width 100%
+				max-width 100%
+				margin-bottom 60px
+				
+	.form-text
+		padding 60px 45px
+		&__wrapper
+			max-width 100%
+			flex none
+			padding-top 0		
+			
+	// Advantages
+	.advantages
+		align-items flex-end
+		justify-content space-between
+		&-wrapper
+			padding 30px
+			
+	.advantage
+		flex-wrap wrap
+		p
+			width 100%
+			margin-top 5px
+			
+
+	.sect-entering .slider-controls
+		display none
+		
+	.products-slider .swiper-slide
+		width 180px
+		
+	.product-slide
+		&__img
+			height 220px
+		&__title
+			font-size 14px
+			line-height 14px
+		&__brand
+			font-size 12px
+			margin-top 6px
+			line-height 12px
+			
+	.sect__products
+		.sect-entering
+			margin-bottom 80px
+			
+
+	.sect__benefits
+		.sect-title
+			margin-bottom 50px
+			
+	.benefit
+		width 100%
+		margin-bottom 46px
+		font-size 17px
+		line-height 22px
+		&:last-child
+			margin-bottom 0
+		&-title
+			font-size 18px
+			margin-bottom 12px
+		
+			
+	.benefits
+		margin-bottom 0
+		
+
+	.feedbacks
+		&__row
+			flex-wrap wrap
+	
+		&-description
+			width 100%
+			flex none
+			margin-right 0
+			p
+				max-width 100%
+				
+		&-slider
+			margin-top 56px
+			width calc(100% + 30px)
+			margin-top 56px
+			
+	.consultation
+		flex-wrap wrap
+		&-img
+			max-width 100%
+			padding-top 10px
+			&:before
+				width 110px
+				height 110px
+				top -55px
+			&:after
+				bottom 120px
+				left 100px
+			img
+				position relative
+				bottom auto
+				left auto
+				
+		&-form
+			width 100%
+			padding 100px 50px
+			
+			.form-submit
+				.form-file
+					flex 1
+					max-width none
+					.btn
+						width 100%
+				.btn
+					width auto
+					max-width none
+					flex 1
+
+		
 
 
 
@@ -330,8 +463,16 @@
 
 
 +max-screen(700px)
+	body
+		font-size 17px
+		line-height 22px
 	.gutter-bottom
 		padding-bottom 40px
+		
+	.sect-title-sm
+		font-size 26px
+		line-height 26px
+		margin-bottom 16px
 		
 	// promo
 	.promo-block
@@ -433,6 +574,154 @@
 			margin-bottom 6px
 			
 
+	.form-groups__row
+		.form-group
+			width 100%
+			
+		.form-submit
+			flex-wrap wrap
+			
+			.btn
+				flex none
+				width 100%
+				max-width 100%
+				
+		.form-notice
+			margin-left 0
+			margin-top 20px
+			font-size 14px
+			
+	.form-label.hidden-label
+		display none
+		
+	.form-group
+		margin-bottom 20px
+		
+	.form-checkbox
+		min-height 20px
+		font-size 14px
+		padding-left 30px
+		&:before
+			width 20px
+			height 20px
+			background-size 10px 7px
+			
+	.form-wrapper
+		&__row
+			.form-wrapper
+				margin-bottom 145px
+				
+	.form-text
+		padding 55px 25px
+		font-size 17px
+		
+	.advantage
+		width 50%
+		flex none
+		margin-bottom 50px
+		
+	.advantages
+		margin-bottom -50px
+		flex-wrap wrap
+		justify-content center
+		&-wrapper
+			padding 40px 50px
+			
+	.products-slider
+		margin-left -7.5px
+		margin-right -7.5px
+		.swiper-slide
+			padding-left 7.5px
+			padding-right 7.5px
+			width 145px
+			
+	.product-slide
+		&__img
+			height 185px
+	
+	.products-slider__wrapper
+		padding-bottom 100px
+		
+	.sect__products
+		padding-bottom 100px
+		
+	.sect__benefits
+		.sect-title
+			margin-bottom 35px
+			br
+				display none
+				
+	.sect__brands
+		.sect-title
+			margin-bottom 22px
+			
+		.sect-description
+			margin-bottom 30px
+			
+	.brand
+		padding-left 10px
+		padding-right 10px
+		margin-bottom 25px
+		height 40px
+		
+	.brands
+		margin-left -10px
+		margin-right -10px
+		margin-bottom -25px
+		
+	.feedbacks-slider
+		margin-top 35px
+		
+	.feedbacks-description .row
+		margin-bottom 30px
+		
+	.feedback
+		padding 40px 35px
+		&-content
+			padding-top 45px
+		&-text
+			font-size 18px
+			line-height 25px
+			margin-bottom 30px
+			
+	.sect__feedbacks
+		padding-bottom 140px
+		
+
+	.consultation
+		flex-wrap wrap
+		border none
+		&-img
+			height 300px
+			display flex
+			align-items flex-end
+			margin-bottom 70px
+			&:before
+				width 80px
+				height 80px
+				top -35px
+				right 20px
+			&:after
+				width 40px
+				height 40px
+				left 100px
+				bottom -15px
+			img
+				width 100%
+				height auto
+				
+		&-form
+			padding 0
+			.form-submit
+				flex-wrap wrap
+				flex-direction column
+				
+			.form-file
+				margin-right 0
+				margin-bottom 20px
+				
+			.btn
+				height 50px
 
 
 
@@ -456,6 +745,8 @@
 		font-size 30px
 		line-height 30px
 
+	.sect__form
+		padding-bottom 50px
 
 
 
@@ -472,6 +763,25 @@
 		&__advantage
 			padding-right 15px
 			margin-right 15px
+			
+	.advantage
+		p
+			font-size 14px
+		&-value
+			font-size 30px
+			min-height 45px
+			display flex
+			align-items center
+			flex-wrap wrap
+			&__price
+				white-space nowrap
+			span
+				font-size 10px
+				display block
+				width 100%
+				
+	.advantages-wrapper
+		padding 35px
 			
 
 
