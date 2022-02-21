@@ -43,7 +43,29 @@
 			margin-right 6px
 			fill-rule evenodd
 			clip-rule evenodd
-			
+		
+	&-toggle
+		display none
+		width 24px
+		height 24px
+		position relative
+		&:before,
+		&:after
+			pseudo()
+			position absolute
+			position-center()
+			background-color $text-color
+			transition opacity .17s ease-in-out
+		
+		&:before
+			width 16px
+			height 2px
+		&:after
+			width 2px
+			height 16px	
+		&.is-active
+			&:after
+				opacity 0
 		
 
 		

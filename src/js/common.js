@@ -53,6 +53,14 @@ $(document).ready(function() {
 		$('html').toggleClass('is-fixed');
 	});
 
+	$('.js-toggle-footer-nav-btn').on('click', function(e) {
+		e.preventDefault();
+
+		$(this).toggleClass('is-active');
+		$(this).parents('.footer-col').find('.footer-nav').stop().slideToggle(250);
+		
+	});
+
 	if ($('.js-select').length > 0) {
 		$('.js-select').on('click',  function(e) {
 			$(this).toggleClass('is-opened');

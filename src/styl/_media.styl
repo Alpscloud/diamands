@@ -98,6 +98,53 @@
 
 
 
++max-screen(1100px)
+	.btn-toggle
+		display inline-block
+		
+	.footer-top
+		padding-top 20px
+		padding-bottom 40px
+		
+	.footer-col
+		width 100%
+		padding-bottom 20px
+		margin-bottom 20px
+		border-bottom 1px solid $border-color
+		padding-left 0
+		padding-right 0
+		
+		&:last-child
+			padding-bottom 0
+			margin-bottom 0
+			border-bottom none
+		&__title
+			font-size 15px
+			margin-bottom 0
+			color $text-color
+		
+	.footer-row
+		flex-wrap wrap
+		margin 0
+		
+	.footer-nav
+		padding-top 35px
+		padding-bottom 15px
+		display none
+		li
+			margin-bottom 20px
+		
+	.footer-contacts
+		margin-top 22px
+		
+		.phone-link
+			font-size 26px
+			
+	.footer-bottom
+		padding 20px 0
+		font-size 14px
+		
+
 
 
 				
@@ -406,6 +453,23 @@
 					max-width none
 					flex 1
 
+	.popup
+		box-shadow 0px 36px 190px rgba(0, 0, 0, 0.25)
+		&-category
+			width 50%
+			margin-bottom 45px
+			white-space nowrap
+			
+		&-categories
+			flex-wrap wrap
+			margin-bottom -45px
+			max-width 500px
+			margin 0 auto -25px
+		&__title
+			font-size 32px
+			line-height 35px
+			max-width 375px
+			margin 0 auto 20px auto
 		
 
 
@@ -450,7 +514,8 @@
 		padding-left 20px
 		padding-right 20px
 		
-
+	.popup
+		height calc(100vh - 60px)
 
 
 
@@ -722,6 +787,34 @@
 				
 			.btn
 				height 50px
+				
+
+	.popup
+		&__overflow
+			padding-top 75px
+			.btn-close
+				top 15px
+				right 15px
+		
+		&-category
+			margin-bottom 20px
+			&__link
+				font-size 12px
+				&--img
+					width 120px
+					height 120px
+					margin 0 auto 15px auto
+					img
+						max-height 100px
+						max-width 100px
+			
+		&-categories
+			margin-bottom -20px
+			
+		&__title
+			font-size 26px
+			line-height 28px
+			margin-bottom 20px
 
 
 
