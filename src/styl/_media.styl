@@ -96,6 +96,20 @@
 	.consultation-img
 		max-width 450px
 
+	.aside
+		width 260px
+		margin-left 50px
+		
+	.article
+		&-title
+			font-size 40px
+			line-height 1
+			margin-bottom 50px
+			
+	.content
+		h2
+			font-size 28px
+			line-height 31px
 
 
 +max-screen(1100px)
@@ -143,6 +157,21 @@
 	.footer-bottom
 		padding 20px 0
 		font-size 14px
+		
+
+	.page-entering
+
+		&__img
+		
+			max-width 300px
+			
+
+	.offer
+		&-img
+			width 300px
+			height 300px
+			right 30px
+			
 		
 
 
@@ -470,7 +499,121 @@
 			line-height 35px
 			max-width 375px
 			margin 0 auto 20px auto
+			
+
+	.block-technical
+		&__title
+			font-size 60px
+			line-height 60px
+			
+		p
+			font-size 18px
+			line-height 24px
+			
+	.breadcrumbs
+		a
+			font-size 16px
+			
+	// Blog
+	.article-card
+		&__wrapper
+			width 50%
+			margin-bottom 0
+			
+				
+			&:nth-child(3n+1)
+				padding-top 0
+			&:nth-child(3n+3)
+				padding-top 0
+				
+			&:nth-child(2n+3)
+				padding-top 80px
+				
+			&:nth-child(4)
+				padding-top 40px
+				
+		&__title
+			font-size 26px
+			line-height 29px
+		&__preview
+			font-size 17px
+			line-height 22px
+				
+	.pagination
+		margin-top 140px
 		
+	.page-title
+		font-size 46px
+		margin-bottom 50px
+		line-height 46px
+		
+	.content
+		h1
+			font-size 36px
+			margin-bottom 20px
+		
+
+	// Article
+	.page-article
+		&__row
+			flex-wrap wrap
+			
+
+	.aside
+		width 100%
+		margin-left 0
+		margin-top 120px
+		&-title
+			font-size 24px
+		&-articles
+			display flex
+			flex-wrap nowrap
+			margin-left -15px
+			margin-right -15px
+			
+		.article-card
+			padding-left 15px
+			padding-right 15px
+			width 50%
+			margin-bottom 0
+			&:nth-child(3)
+				display none
+		
+	.article
+		&-wrapper
+			flex none
+			max-width 100%
+
+
+
+	.page-entering
+		position relative
+		padding-bottom 85px
+		margin-bottom 85px
+		&__img
+			width 255px
+			right 0
+			bottom 30px
+			position absolute
+		&__content
+			padding-right 285px
+			h1
+				font-size 44px
+				white-space nowrap
+				
+			p
+				max-width 90%
+				
+
+	.offer
+		padding-left 30px
+		padding-right 30px
+		&-content
+			max-width 420px
+		&-img
+			width 215px
+			height 215px
+			
 
 
 
@@ -519,7 +662,8 @@
 
 
 
-
+	.sect__technical
+		min-height calc(100% - 60px)
 
 
 
@@ -817,6 +961,197 @@
 			margin-bottom 20px
 
 
+	.sect__technical
+		padding-top 35px
+		padding-bottom 30px
+		
+		.breadcrumbs
+			margin-top 100px
+		
+	.block-technical
+		img
+			max-width 340px
+			margin-bottom 15px
+		&__title
+			font-size 42px
+			line-height 1
+			margin-bottom 14px
+		
+		p
+			font-size 17px
+			line-height 22px
+			margin-bottom 40px
+			
+
+	.article-card
+		&__wrapper
+			width 100%
+			margin-bottom 60px
+			padding-top 0 !important
+			&:last-child
+				margin-bottom 0
+			
+		
+				
+		&__title
+			font-size 26px
+			line-height 29px
+		&__preview
+			font-size 16px
+			line-height 22px
+				
+	.pagination
+		margin-top 100px
+		&-item
+			margin-right 24px
+			a
+				font-size 26px
+		
+	.page-title
+		font-size 33px
+		margin-bottom 35px
+		line-height 37px
+		
+
+	.aside
+		margin-top 100px
+		&-articles
+			flex-wrap wrap
+			
+		.article-card
+			width 100%
+			margin-bottom 50px
+			&:last-child,
+			&:nth-child(2)
+				margin-bottom 0
+				
+			&__title
+				font-size 26px
+				line-height 29px
+		
+
+		
+	.share
+		margin-top 50px
+		flex-wrap wrap
+		&-label
+			display block
+			width 100%
+			margin-bottom 30px
+			margin-right 0
+			
+
+	.article
+		padding-bottom 80px
+		&-title
+			font-size 31px
+			line-height 1
+			margin-bottom 38px
+			
+		&-thumbnail
+			margin-bottom 20px
+			
+
+	.content
+		h1
+			font-size 31px
+			margin-bottom 26px
+			
+		p + h3,
+		ul + h3,
+		ol + h3,
+		img + h3
+			margin-top 50px
+			
+		p + h2,
+		ul + h2,
+		ol + h2,
+		img + h2
+			margin-top 50px
+			
+		h2
+			font-size 24px
+			line-height 26px
+			
+		h3
+			font-size 18px
+			line-height 18px
+			
+		img
+			margin 25px 0
+			
+	.breadcrumbs
+		li
+			padding-right 20px
+			margin-right 16px
+			width auto
+			//max-width 110px
+
+		
+	.text-page-gutter
+		padding-top 55px
+		
+	// City
+	.sect__city
+		padding-top 60px
+		
+	.page-entering
+		position relative
+		padding-bottom 20px
+		margin-bottom 60px
+		flex-wrap wrap
+		&__img
+			width 75%
+			position relative
+			bottom auto
+			right auto
+		
+			margin 40px auto 0
+			
+		&__content
+			padding-right 0
+			max-width 100%
+			flex none
+			h1
+				font-size 33px
+				white-space normal
+				
+			p
+				max-width 100%
+				
+	.text-page
+		padding-bottom 90px
+		
+
+	.offer
+		padding 120px 20px 75px
+		&-content
+			max-width 100%
+		&-img
+			width 190px
+			height 190px
+			transform none
+			top -65px
+			
+		.sect-title
+			max-width 270px
+			
+
+	.sect__city
+		.feedbacks-description
+			p
+				display none
+			.row
+				margin-bottom 0
+			
+
+
+
+
+
+
+
+		
 
 			
 
@@ -840,6 +1175,12 @@
 
 	.sect__form
 		padding-bottom 50px
+		
+
+	.offer
+		.btn
+			max-width 100%
+
 
 
 
@@ -875,10 +1216,12 @@
 				
 	.advantages-wrapper
 		padding 35px
+		
+
 			
 
 
-+max-screen(364px)
++max-screen(359px)
 	.logo
 		img
 			width 110px
@@ -886,3 +1229,9 @@
 	.promo-block__advantage p
 		font-size 12px
 		line-height 14px
+		
+	.content
+		h1
+			font-size 27px
+			
+		

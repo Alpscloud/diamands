@@ -1,0 +1,66 @@
+{% include '../parts/head.html' %}
+<body>
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+		<!-- Header -->
+		{% include '../parts/sections/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main main-gutter-top">
+
+			<section class="sect__technical">
+				<div class="container">
+					<div class="block-technical text-center">
+						<img src="img/404.png" alt="">
+						<h1 class="block-technical__title">Ошибка 404</h1>
+						<p>Страница которую вы ищите не существует. Проверьте правильность данных или вернитесь на главную.</p>
+						<a href="index.html" class="btn btn-transparent">на Главную</a>
+					</div>
+
+
+					<!-- Breadcrumbs -->
+					<div class="breadcrumbs">
+						<nav  aria-label="Breadcrumbs" itemprop="breadcrumb">
+							<ul class="breadcrumbs__list" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+
+								<li  itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+									<meta content="1" itemprop="position">
+									<a href="index.html" rel="home" aria-label="Главная" itemtype="https://schema.org/Thing" itemprop="item">
+										<span itemprop="name">
+											<span>Главная</span>
+										</span>
+									</a>
+								</li>
+
+								<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+									<meta content="2" itemprop="position">
+									<span class="is-active" itemtype="https://schema.org/Thing" itemprop="item">
+										<span itemprop="name">Ошибка 404</span>
+									</span>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<!-- //Breadcrumbs -->
+				</div>
+				<!-- //container -->
+			</section>		
+
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/footer.html' %}
+		<!-- //Footer -->
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>

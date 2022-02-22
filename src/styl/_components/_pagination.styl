@@ -1,8 +1,42 @@
 .pagination
-	&__list
+	&-list
 		text-align center
-	&__item
+		display flex
+		justify-content center
+		align-items center
+		
+	
+	&-item
 		display inline-block
-		margin-right 10px
+		margin-right 20px
 		&:last-child
 			margin-right 0
+	
+		a
+			font 28px $Tenor
+			color $text-color
+			&:hover
+				color $accent-color
+		span
+			font 28px $Tenor
+			color $light-text-color
+			
+		&__arrow
+			height 46px
+			a
+				display inline-block
+				width 46px
+				height 46px
+				border 1px solid $accent-color
+				position relative
+				svg
+					svg()
+					width 20px
+					height 9px
+					fill $text-color
+					position absolute
+					position-center()
+				&:hover
+					background-color $accent-color
+					svg
+						fill $basic-white-color

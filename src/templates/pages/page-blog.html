@@ -1,0 +1,142 @@
+{% include '../parts/head.html' %}
+<body>
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+		<!-- Header -->
+		{% include '../parts/sections/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main main-gutter-top">
+
+
+			<section class="sect__blog page-gutter-bottom">
+
+				<div class="container">
+					<h1 class="page-title">Статьи</h1>
+
+
+					<div class="articles-cards">
+						<div class="articles-cards__row row align-horisontal-start row-gutters">
+							<div class="article-card__wrapper col-w-33 col-gutters">
+								{% include '../parts/components/article-card.html' %}
+							</div>
+							<!-- //article card -->
+							<div class="article-card__wrapper col-w-33 col-gutters">
+								{% include '../parts/components/article-card.html' %}
+							</div>
+							<!-- //article card -->
+							<div class="article-card__wrapper col-w-33 col-gutters">
+								{% include '../parts/components/article-card.html' %}
+							</div>
+							<!-- //article card -->
+							<div class="article-card__wrapper col-w-33 col-gutters">
+								{% include '../parts/components/article-card.html' %}
+							</div>
+							<!-- //article card -->
+							<div class="article-card__wrapper col-w-33 col-gutters">
+								{% include '../parts/components/article-card.html' %}
+							</div>
+							<!-- //article card -->
+							<div class="article-card__wrapper col-w-33 col-gutters">
+								{% include '../parts/components/article-card.html' %}
+							</div>
+							<!-- //article card -->
+							<div class="article-card__wrapper col-w-33 col-gutters">
+								{% include '../parts/components/article-card.html' %}
+							</div>
+							<!-- //article card -->
+							<div class="article-card__wrapper col-w-33 col-gutters">
+								{% include '../parts/components/article-card.html' %}
+							</div>
+							<!-- //article card -->
+							<div class="article-card__wrapper col-w-33 col-gutters">
+								{% include '../parts/components/article-card.html' %}
+							</div>
+							<!-- //article card -->
+
+						</div>
+
+						<!-- Pagination -->
+						<div class="pagination">
+							<ul class="pagination-list">
+								<li class="pagination-item pagination-item__arrow pagination-item__arrow-prev">
+									<a href="#">
+										<svg  viewBox="0 0 20 9"  xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.610314 4.05758C0.415052 4.25284 0.415052 4.56942 0.610314 4.76469L3.79229 7.94667C3.98756 8.14193 4.30414 8.14193 4.4994 7.94667C4.69466 7.7514 4.69466 7.43482 4.4994 7.23956L1.67097 4.41113L4.4994 1.58271C4.69466 1.38744 4.69466 1.07086 4.4994 0.875599C4.30414 0.680337 3.98756 0.680337 3.79229 0.875599L0.610314 4.05758ZM0.963867 4.91113L19.0353 4.91113L19.0353 3.91113L0.963867 3.91113L0.963867 4.91113Z"/>
+										</svg>
+									</a>
+								</li>
+								<li class="pagination-item">
+									<span>1</span>
+								</li>
+								<li class="pagination-item">
+									<a href="#">2</a>
+								</li>
+								<li class="pagination-item">
+									<a href="#">3</a>
+								</li>
+								<li class="pagination-item">
+									<a href="#">4</a>
+								</li>
+								<li class="pagination-item pagination-item__arrow pagination-item__arrow-next">
+									<a href="#">
+										<svg  viewBox="0 0 20 9" xmlns="http://www.w3.org/2000/svg">
+											<path d="M19.3897 4.94242C19.5849 4.74716 19.5849 4.43058 19.3897 4.23531L16.2077 1.05333C16.0124 0.858071 15.6959 0.858071 15.5006 1.05333C15.3053 1.2486 15.3053 1.56518 15.5006 1.76044L18.329 4.58887L15.5006 7.41729C15.3053 7.61256 15.3053 7.92914 15.5006 8.1244C15.6959 8.31966 16.0124 8.31966 16.2077 8.1244L19.3897 4.94242ZM19.0361 4.08887L0.964703 4.08887L0.964703 5.08887L19.0361 5.08887L19.0361 4.08887Z" />
+										</svg>
+
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- //Pagination -->
+					</div>
+
+
+					<!-- Breadcrumbs -->
+					<div class="breadcrumbs">
+						<nav  aria-label="Breadcrumbs" itemprop="breadcrumb">
+							<ul class="breadcrumbs__list" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+
+								<li  itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+									<meta content="1" itemprop="position">
+									<a href="index.html" rel="home" aria-label="Главная" itemtype="https://schema.org/Thing" itemprop="item">
+										<span itemprop="name">
+											<span>Главная</span>
+										</span>
+									</a>
+								</li>
+
+								<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+									<meta content="2" itemprop="position">
+									<span class="is-active" itemtype="https://schema.org/Thing" itemprop="item">
+										<span itemprop="name">Статьи</span>
+									</span>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<!-- //Breadcrumbs -->
+				</div>
+				<!-- //container -->
+
+			</section>
+
+
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/footer.html' %}
+		<!-- //Footer -->
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>

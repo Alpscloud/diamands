@@ -16,6 +16,9 @@
 		padding-bottom $gutter-bottom
 		&-lg
 			padding-bottom $gutter-bottom-lg
+			
+.page-gutter-bottom
+	padding-bottom 30px
 		
 .main-gutter-top
 	padding-top 90px
@@ -50,6 +53,11 @@
 	font 60px $Tenor
 	line-height 67px
 	margin-bottom 30px
+	
+.page-title
+	font 60px $Tenor
+	line-height 67px
+	margin-bottom 40px
 	
 
 		
@@ -128,19 +136,60 @@
 	
 
 .content
+	color $opacity-text-color
+	font-size 17px
 	*
 		&:last-child
 			margin-bottom 0
 			
-	h2,h3,h3,h4,h5,h6
-		line-height 1
-		font-family $Bold
+	h1
+		color $text-color
+		font 50px $Tenor
+		margin-bottom 40px
+			
+	h2
+		font 32px $Tenor
+		line-height 35px
+		margin-bottom 20px
+		color $text-color
 		
+	h3
+		font 20px $Med
+		text-transform uppercase
+		color $text-color
+		margin-bottom 15px
+		
+	p + h3,
+	ul + h3,
+	ol + h3,
+	img + h3
+		margin-top 60px
+		
+	a
+		color inherit
+		&:hover
+			color $accent-color
+		
+		
+
+	p + h2,
+	ul + h2,
+	ol + h2,
+	img + h2
+		margin-top 60px
+		
+
+	p + ul,
+	p + ol
+		margin-top -25px
+			
+	
 	strong, b
-		font-family $Bold
+		font-family $Medium
 		
 
 	ul, ol
+		margin-bottom 25px
 		li
 			display block
 			position relative
@@ -153,11 +202,12 @@
 		li
 			&:before
 				pseudo()
-				width 4px
-				height 4px
+				width 2px
+				height 2px
 				border-radius 50%
-				margin-right 4px
-				background-color $text-color
+				margin-right 10px
+				background-color currentColor
+				vertical-align middle
 				
 	ol
 		counter-reset list
@@ -167,6 +217,12 @@
 				content counter(list) ". "
 				display inline-block
 				margin-right 4px
+				
+	img
+		display block
+		width auto
+		max-width 100%
+		margin 35px 0
 				
 	p
 		margin-bottom 25px
@@ -178,7 +234,7 @@
 	
 
 .no-margin
-	margin 0
+	margin 0 
 	
 .margin-b-65
 	margin-bottom 65px
@@ -207,3 +263,21 @@
 		
 	.slider-controls
 		margin-top 20px
+		
+
+.page-entering
+	display flex
+	align-items center
+	justify-content space-between
+	flex-wrap nowrap
+	padding-bottom 65px
+	border-bottom 1px solid $border-color
+	margin-bottom 95px
+	&__content
+		flex 1
+		
+	&__img
+		max-width 450px
+		margin-left 50px
+		img
+			display block
