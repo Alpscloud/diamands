@@ -36,6 +36,15 @@
 		font-size 14px
 		
 
+.address
+	font-size 20px
+	color $opacity-text-color
+	span
+		display block
+		color rgba($text-color, .5)
+		font-size 17px
+		
+
 .offer
 	position relative
 	overflow hidden
@@ -59,3 +68,34 @@
 		width 400px
 		img
 			display block
+			
+
+.ic-block
+	position relative
+	padding-left 30px
+	&:before
+		pseudo()
+		position absolute
+		vertical-center()
+		left 0
+		width 21px
+		height 21px
+		background-repeat no-repeat
+		background-size contain
+		background-position 50%
+	&__phone
+		&:before
+			background-image url('../img/icons/svg/phone.svg')
+	&__chat
+		&:before
+			background-image url('../img/icons/svg/chat.svg')
+	&__address
+		&:before
+			background-image url('../img/icons/svg/address.svg')
+			
+
+.link
+	color rgba($basic-black-color, .8)
+	text-decoration underline
+	&:hover
+		color $accent-color
