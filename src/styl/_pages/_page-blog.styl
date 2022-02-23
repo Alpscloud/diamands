@@ -7,8 +7,23 @@
 		display block
 		padding-top 63%
 		margin-bottom 20px
-		&:hover
-			opacity .85
+		&:before
+			pseudo()
+			position absolute
+			fullSize()
+			background-color rgba(#FBFBFB, .84)
+			transition opacity .17s ease-in-out
+			opacity 0
+			z-index 1
+		.btn
+			font 17px $Reg
+			padding-left 40px
+			padding-right 40px
+			position absolute
+			position-center()
+			z-index 3
+			opacity 0
+		
 	&__preview
 		color $opacity-text-color
 		font-size 17px
@@ -19,8 +34,17 @@
 		margin-bottom 11px
 		a
 			color $text-color
-			&:hover
-				color $accent-color
+			border-bottom 1px solid transparent
+	&:hover
+		.article-card
+			&__title
+				a
+					border-color currentColor
+			&__thumbnail
+				&:before
+					opacity 1
+				.btn
+					opacity 1
 	&__wrapper
 		margin-bottom 40px
 		&:nth-child(3n+1)

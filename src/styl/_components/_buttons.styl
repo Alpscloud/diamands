@@ -11,13 +11,11 @@
 	transition all .17s ease-in-out
 	backface-visibility hidden
 	white-space nowrap
+	outline 3px solid transparent
 	svg
 		fill $text-color
 	&:hover
-		background-color transparent
-		color $text-color
-		svg
-			fill $text-color
+		outline-color $accent-color
 	
 	&-lg
 		padding 23px 48px
@@ -25,6 +23,8 @@
 	&-transparent
 		background-color transparent
 		color $text-color
+		outline none
+		border-color $accent-color
 		&:hover
 			color $basic-white-color
 			background-color $accent-color

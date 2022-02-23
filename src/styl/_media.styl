@@ -12,6 +12,13 @@
 	.sect-title
 		font-size 40px
 		line-height 46px
+		
+	.sect__feedbacks
+		padding-bottom 110px
+	
+	.promo-block__img
+		width 650px
+		margin-left 50px
 
 +max-screen(1365px)
 	.container
@@ -66,7 +73,7 @@
 
 	.promo-block
 		padding-top 120px
-		min-height calc(100vh - 90px)
+		padding-bottom 150px
 		&__content
 			max-width 520px
 		&__img
@@ -213,6 +220,9 @@
 	.contacts-entering__img
 		margin-left 20px
 			
+	.sect__brands,
+	.sect__feedbacks
+		padding-bottom 160px
 		
 
 
@@ -524,7 +534,11 @@
 					flex 1
 
 	.popup
-		box-shadow 0px 36px 190px rgba(0, 0, 0, 0.25)
+		&__overflow
+			padding 0
+		&__body
+			box-shadow 0px 36px 190px rgba(0, 0, 0, 0.25)
+			padding 70px 20px
 		&-category
 			width 50%
 			margin-bottom 45px
@@ -665,6 +679,9 @@
 			
 			&:last-child
 				margin-bottom 0
+				
+	.sect__feedbacks
+		padding-bottom 110px
 			
 
 
@@ -709,8 +726,7 @@
 		padding-left 20px
 		padding-right 20px
 		
-	.popup
-		height calc(100vh - 60px)
+	
 
 
 
@@ -747,15 +763,10 @@
 			order 1
 			width 340px
 			height 200px
-			background-color $color-bg
 			margin-left 0
-			margin-right -100px
+			margin-right -80px
 			margin-bottom 50px
-			img
-				position absolute
-				positio-center()
-				margin-left -40px
-				width 420px
+		
 		&__content
 			order 2
 			max-width 100%
@@ -783,8 +794,16 @@
 				width 100%
 				margin-right 0
 				margin-bottom 16px
+				height 56px
+				padding-top 10px
+				padding-bottom 10px
+				&-lg
+					flex-col-center()
 				&:last-child
 					margin-bottom 0
+					
+				&-transparent
+					font-size 17px
 			
 	.title
 		font-size 36px
@@ -806,7 +825,7 @@
 		
 		
 	.category-card
-		padding 35px 5px 35px 20px
+		padding 15px 5px 15px 20px
 		min-height 130px
 		&__wrapper
 			margin-bottom 30px
@@ -824,11 +843,9 @@
 			max-width 200px
 			margin-right 15px
 		&__thumbnail
-			width 100px
-			height 100px
-			img
-				max-width 80px
-				max-height 80px
+			width 98px
+			height 98px
+		
 		&__title
 			font-size 19px
 			line-height 20px
@@ -923,7 +940,7 @@
 	.brand
 		padding-left 10px
 		padding-right 10px
-		margin-bottom 25px
+		margin-bottom 5px
 		height 40px
 		
 	.brands
@@ -987,23 +1004,21 @@
 				
 
 	.popup
-		&__overflow
-			padding-top 75px
-			.btn-close
-				top 15px
-				right 15px
+		.btn-close
+			top 15px
+			right 15px
 		
 		&-category
 			margin-bottom 20px
+			padding-left 10px
+			padding-right 10px
 			&__link
 				font-size 12px
 				&--img
 					width 120px
 					height 120px
-					margin 0 auto 15px auto
-					img
-						max-height 100px
-						max-width 100px
+					margin 0 auto 10px auto
+					
 			
 		&-categories
 			margin-bottom -20px
@@ -1246,6 +1261,20 @@
 			&:last-child
 				margin-bottom 0
 
+	.sect__brands,
+	.sect__feedbacks
+		padding-bottom 130px
+		
+
+	.breadcrumbs
+		a,
+		span
+			font-size 13px
+		li
+			padding-right 18px
+			margin-right 14px
+		
+
 
 
 		
@@ -1267,8 +1296,8 @@
 		margin-bottom -25px
 		
 	.sect-title
-		font-size 30px
-		line-height 30px
+		font-size 32px
+		line-height 32px
 
 	.sect__form
 		padding-bottom 50px
@@ -1282,7 +1311,10 @@
 
 
 
-
++max-screen(430px)
+	.breadcrumbs__list 
+		li:last-child
+			max-width 180px
 
 
 
@@ -1298,6 +1330,7 @@
 	.advantage
 		p
 			font-size 14px
+			margin-top 7px
 		&-value
 			font-size 30px
 			min-height 45px
@@ -1307,7 +1340,7 @@
 			&__price
 				white-space nowrap
 			span
-				font-size 10px
+				font-size 11px
 				display block
 				width 100%
 				
@@ -1315,7 +1348,11 @@
 		padding 35px
 		
 
-			
+	
++max-screen(370px)
+	.breadcrumbs__list 
+		li:last-child
+			max-width 130px		
 
 
 +max-screen(359px)

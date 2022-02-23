@@ -17,6 +17,14 @@ $(document).ready(function() {
 		}, 200);
 	});
 
+	$('.js-smooth-scroll-link').on('click', function (e) {
+		e.preventDefault();
+		var id = $(this).attr('href'),
+			top = $(id).offset().top - 70;
+
+		$('html, body').animate({scrollTop: top}, 300);
+	});	
+
 
 	// Popup
 	$('.js-open-categories-popup-btn').on('click',function(e) {
