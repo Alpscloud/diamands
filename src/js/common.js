@@ -121,7 +121,79 @@ $(document).ready(function() {
 	}
 
 
+	var fileInputs = $('input[type=file]');
+
+	console.log(fileInputs)
+
+	if (fileInputs.length > 0) {
+
+		fileInputs.each(function() {
+
+			$(this).on('change', function(e) {
+				var self = $(this);
+				var fileName = '';
+
+				var filesLength = self[0].files.length;
+				var files = self[0].files;
+
+				if (files && filesLength > 1) {
+					fileName = ( self.attr( 'data-multiple-caption' ) || '' ).replace( '{count}', filesLength );
+				} else {
+					fileName = e.target.value.split( '\\' ).pop();
+				}
+
+				if( fileName ) {	
+					self.parents('.form-file').find('.form-file__result--text').html(fileName);
+					self.parents('.form-file').addClass('is-attached');
+				} 
+
+				
+
+
+			});
+		});
+	
+	}
+
+
+
+	// var fileInputs = document.querySelectorAll( '.input__file' );
+
+
+	// Array.prototype.forEach.call( fileInputs, function( input ) {
+	// 	var label    = input.parentNode,
+	// 	labelVal = label.innerHTML;
+
+	// 	input.addEventListener('change', function(e) {
+	// 		var fileName = '',
+	// 		nextElem = label.nextElementSibling;
+
+	// 		if(nextElem.classList.contains('active')) {
+	// 			nextElem.classList.remove('active');
+	// 		}
+
+	// 		if( this.files && this.files.length > 1 ) {
+	// 			fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+	// 		}
+	// 		else {
+	// 			fileName = e.target.value.split( '\\' ).pop();
+	// 		}
+
+	// 		if( fileName ) {	
+	// 			nextElem.innerHTML = fileName;
+	// 			nextElem.classList.add('is-active');
+	// 		} else {
+
+	// 			label.innerHTML = labelVal;
+	// 		}
+	// 	});
+	// });
+
+
 	$("input[type=tel]").inputmask({"mask": "+380 (99) 999 99 99","clearIncomplete": false});
 
 
 });
+
+
+
