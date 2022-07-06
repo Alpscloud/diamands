@@ -1,0 +1,326 @@
+{% include '../parts/head.html' %}
+<body>
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+		<!-- Header -->
+		{% include '../parts/sections/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main main-gutter-top page-gutter-bottom service">
+
+			<section class="sect__service-evaluation page-service gutter-bottom">
+
+				<div class="container">
+
+					<div class="service-evaluation">
+
+						<div class="service-entering-text content">
+							<h1>Оценка бриллианта</h1>
+							<p>Хотите оценить бриллиант или украшение с бриллиантами быстро? Закажите бесплатную онлайн оценку, приложив фото геммологического сертификата.</p>
+						</div>
+
+						<div class="form-wrapper service-evaluation-form">
+							<form>
+								<!-- Hidden inputs -->
+								<input type="hidden" name="project_name" value="Diamands">
+								<input type="hidden" name="form_subject" value="Оценка продукта">
+								<input type="hidden" name="page" value="Страница: ">
+								<!-- // Hidden inputs -->
+								<div class="row align-horisontal-start form-groups__row">
+									<div class="form-group col-w-25">
+										
+										<p class="form-label">Телефон</p>
+										<input type="tel" name="tel" class="form-input js-required-input" placeholder="+380 (__) ___ __ __">
+										<p class="form-error">Заполните это поле</p>
+										
+									</div>
+
+									<div class="form-group col-w-25">
+
+										<p class="form-label">Вес камня*</p>
+										<input type="text" name="Вес камня" class="form-input js-required-input" placeholder="Вес камня">
+										<p class="form-error">Заполните это поле</p>
+									</div>
+
+									<div class="form-group col-w-25">
+
+										<p class="form-label">Чистота*</p>
+										<input type="text" name="Чистота" class="form-input js-required-input" placeholder="Чистота">
+										<p class="form-error">Заполните это поле</p>
+									</div>
+
+									<div class="form-group col-w-25">
+
+										<p class="form-label">Email</p>
+										<input type="email" name="email" class="form-input" placeholder="Ваш емейл">
+									</div>
+
+									<div class="form-group tablet-full-width col-w-50">
+										<p class="form-label">Описание предмета</p>
+										<textarea name="Описание" class="form-input form-textarea" placeholder="Расскажите про характеристики камня "></textarea>
+									</div>
+
+									<div class="form-group tablet-full-width form-group-file col-w-50">
+
+										<label class="form-file">
+											<p class="form-label hidden-label">Файл</p>
+											<input type="file" name="fileFF[]" multiple="" data-multiple-caption="Выбрано: {count} файла(ов)">
+											<span class="btn btn-transparent btn-with-ic f-f-regular form-file__attach">
+												<svg  viewBox="0 0 9 18"  xmlns="http://www.w3.org/2000/svg">
+													<path d="M4.375 17.25C6.655 17.25 8.5 15.405 8.5 13.125V4.5H7.375V13.125C7.375 14.7825 6.0325 16.125 4.375 16.125C2.7175 16.125 1.375 14.7825 1.375 13.125V3.75C1.375 3.25272 1.57254 2.77581 1.92417 2.42417C2.27581 2.07254 2.75272 1.875 3.25 1.875C3.74728 1.875 4.22419 2.07254 4.57583 2.42417C4.92746 2.77581 5.125 3.25272 5.125 3.75V11.625C5.125 12.0375 4.7875 12.375 4.375 12.375C3.9625 12.375 3.625 12.0375 3.625 11.625V4.5H2.5V11.625C2.5 12.1223 2.69754 12.5992 3.04917 12.9508C3.40081 13.3025 3.87772 13.5 4.375 13.5C4.87228 13.5 5.34919 13.3025 5.70083 12.9508C6.05246 12.5992 6.25 12.1223 6.25 11.625V3.75C6.25 2.0925 4.9075 0.75 3.25 0.75C1.5925 0.75 0.25 2.0925 0.25 3.75V13.125C0.25 15.405 2.095 17.25 4.375 17.25Z" />
+												</svg>
+												<span>Прикрепить фото</span>
+
+											</span>
+
+											<span class="btn btn-transparent btn-with-ic form-file__result">
+												<svg  viewBox="0 0 9 18"  xmlns="http://www.w3.org/2000/svg">
+													<path d="M4.375 17.25C6.655 17.25 8.5 15.405 8.5 13.125V4.5H7.375V13.125C7.375 14.7825 6.0325 16.125 4.375 16.125C2.7175 16.125 1.375 14.7825 1.375 13.125V3.75C1.375 3.25272 1.57254 2.77581 1.92417 2.42417C2.27581 2.07254 2.75272 1.875 3.25 1.875C3.74728 1.875 4.22419 2.07254 4.57583 2.42417C4.92746 2.77581 5.125 3.25272 5.125 3.75V11.625C5.125 12.0375 4.7875 12.375 4.375 12.375C3.9625 12.375 3.625 12.0375 3.625 11.625V4.5H2.5V11.625C2.5 12.1223 2.69754 12.5992 3.04917 12.9508C3.40081 13.3025 3.87772 13.5 4.375 13.5C4.87228 13.5 5.34919 13.3025 5.70083 12.9508C6.05246 12.5992 6.25 12.1223 6.25 11.625V3.75C6.25 2.0925 4.9075 0.75 3.25 0.75C1.5925 0.75 0.25 2.0925 0.25 3.75V13.125C0.25 15.405 2.095 17.25 4.375 17.25Z" />
+												</svg>
+												<span class="form-file__result--text">Выбрано: 2 файла(ов)</span>
+												<svg class="clear-ic" viewBox="0 0 11 12" xmlns="http://www.w3.org/2000/svg">
+													<path d="M0.833008 10.667L10.1666 1.33336"/>
+													<path d="M10.167 10.667L0.833356 1.33336"/>
+												</svg>
+											</span>
+										</label>
+
+										<label class="form-checkbox__label">
+											<input name="sertificate" type="checkbox">
+											<span class="form-checkbox">У меня есть гемологический сертификат</span>
+										</label>
+
+									</div>
+
+									<div class="form-submit align-vertical-center col-w-100">
+										<button class="btn" type="submit">оценить бриллиант</button>
+
+										<p class="form-notice">Нажимая на кнопку, подтверждаю согласие<br> с <a href="page-policy.html">политикой конфиденциальности</a></p>
+									</div>
+								</div>
+							</form>
+
+							
+						</div>
+
+
+					</div>
+				</div>
+				<!-- //container -->
+
+			</section>
+
+			{% include '../parts/sections/sect-advantages.html' %}
+
+			<section class="sect__service-content">
+
+				<div class="container">
+
+					<article class="service-content text-page">
+
+						<div class="content content-lg-titles">
+							<h2>От чего зависит цена бриллианта?</h2>
+							<p>Оценка бриллиантов и других драгоценных камней комплексная задача, с которой справится лишь профессиональный геммолог. Благодаря нашему онлайн сервису вы сможете предварительно оценить бриллиант всего за 10 минут просто отправив заявку выше. Наличие геммологического сертификата упростит процесс, так как основные параметры, влиющие на цену в нем уже указаны: </p>
+
+							<div class="service-params">
+								<div class="service-param">
+									<img src="img/icons/svg/params/scales.svg" alt="">
+									<span>Вес бриллианта</span>
+								</div>
+
+								<div class="service-param">
+									<img src="img/icons/svg/params/purity.svg" alt="">
+									<span>Чистота бриллианта</span>
+								</div>
+
+								<div class="service-param">
+									<img src="img/icons/svg/params/color.svg" alt="">
+									<span>Цвет и оттенок</span>
+								</div>
+
+								<div class="service-param">
+									<img src="img/icons/svg/params/form.svg" alt="">
+									<span>Форма огранки</span>
+								</div>
+
+								<div class="service-param">
+									<img src="img/icons/svg/params/clear.svg" alt="">
+									<span>Полировка</span>
+								</div>
+
+								<div class="service-param">
+									<img src="img/icons/svg/params/symmetry.svg" alt="">
+									<span>Симметрия</span>
+								</div>
+							</div>
+
+							<p>При отсутвии геммологического сертификата оценить бриллиант мы сможем лишь при личной консультации. Для оценки бриллиантов используются специализированные геммологические инструменты и признаные во всем мире градации характеристик. </p>
+
+							<h3>Вес и размер бриллианта</h3>
+							<p>Вес бриллианта и, следовательно, его размер выражается в каратах (ct).<br> Эта единица измерения имеет вес 200 миллиграммов и определяется при помощи каратных весов. Вес бриллиантов круглой огранки можно также определить при помощи линейки по специальной шкале.</p>
+							<img src="img/weight.jpg" alt="">
+							<p>Чем крупнее бриллиант, тем реже он встречается в природе и, как правило, тем дороже его стоимость. Но это не всегда так, и размер является лишь одним из парметров ценности. Цена бриллиант размером 1 карат с характеристикой цвета 	D и чистотой	IF  по шкале GIA может стоить от 20 тысяч долларов США.</p>
+
+							<h3>Чистота бриллианта</h3>
+							<p>За счет особенности формирования, каждый бриллиант имеет небольшие включения : пятнышки, трещинки и пузырьки, которые делют каждый камень уникальным. Чистота является самым основным параметром, от которого зависит цена бриллианта. Для классификации чистоты существует специальная шкала, которая оценивает количество включений. Более чистый бриллиант встречается реже и стоит дороже.</p>
+							<img src="img/purity.jpg" alt="">
+
+							<h3>Цвет бриллианта</h3>
+							<p>Примеси, которые содержатся в бриллиантах могут давать им цветовую окраску от голубого до желто-коньячного оттенка. Больше всего ценятся бесцветные бриллианты, в которых нет оттенков. Однако, существуют также довольно редкие цветные экземпляры, цена которых возрастает вместе с насыщенностью цвета.</p>
+							<img src="img/color.jpg" alt="">
+
+							<h3>Тип Огранки</h3>
+							<p>Алмазы добывают из недр земли в необработанном виде и проходят множество этапов придания формы и полировки. От огранки напрямую зависит как бриллиант будет сверкать. У хорошо ограненного бриллианта каждая грань будет расположена симметрично и под правильным углом, чтобы максимально отражать свет. </p>
+
+							<div class="service-shapes">
+								<div class="service-shape">
+									<img src="img/stones/1.png" alt="">
+									<p>Круг</p>
+								</div>
+								<div class="service-shape">
+									<img src="img/stones/2.png" alt="">
+									<p>Подушка</p>
+								</div>
+								<div class="service-shape">
+									<img src="img/stones/3.png" alt="">
+									<p>Асшер</p>
+								</div>
+								<div class="service-shape">
+									<img src="img/stones/4.png" alt="">
+									<p>Изумруд</p>
+								</div>
+								<div class="service-shape">
+									<img src="img/stones/5.png" alt="">
+									<p>Сияющий</p>
+								</div>
+								<div class="service-shape">
+									<img src="img/stones/6.png" alt="">
+									<p>Принцесса</p>
+								</div>
+								<div class="service-shape">
+									<img src="img/stones/7.png" alt="">
+									<p>Сердце</p>
+								</div>
+								<div class="service-shape">
+									<img src="img/stones/8.png" alt="">
+									<p>Маркиза</p>
+								</div>
+								<div class="service-shape">
+									<img src="img/stones/9.png" alt="">
+									<p>Груша</p>
+								</div>
+								<div class="service-shape">
+									<img src="img/stones/10.png" alt="">
+									<p>Овал</p>
+								</div>
+							</div>
+
+							<p>Благодаря разнообразным формам огранки в ювелирном деле есть возможность воплотить любой дизайн. Круглые бриллианты считаются самыми сияющими.</p>
+
+
+							<h2>Геммологический сертификат </h2>
+							<p>Сертификат от одной из ведущих и признанных геммологических лабораторий необходим для беспристрастной оценки качества бриллианта. Наличие у продаваемого бриллианта сертификата от таких аттестационных органов как GIA, AGS, HRD, IGI и EGL упростит его оценку. В сертификате содержится информация о весе, чистоте, цвете, прозрачности, симметрии и других важных параметрах. </p>
+
+							<div class="brands-logos">
+								<div class="brand-logo"><img src="img/logos/1.png" alt=""></div>
+								<div class="brand-logo"><img src="img/logos/2.png" alt=""></div>
+								<div class="brand-logo"><img src="img/logos/3.png" alt=""></div>
+								<div class="brand-logo"><img src="img/logos/4.png" alt=""></div>
+								<div class="brand-logo"><img src="img/logos/5.png" alt=""></div>
+								<div class="brand-logo"><img src="img/logos/6.png" alt=""></div>
+							</div>
+
+							<p>Для защиты каждому сертифицированному бриллианту при помощи лазерной гравировки наносится уникальный номер, который также указан в сертификате. Таким образом наличие сертификата является гарантией достоверных данных о бриллианте, которые необходимы для оценки стоимости, а проверить подлинность сертификата специалисту не составит труда.</p>
+
+							<h3>Примеры сертификата</h3>
+
+
+							<div class="sertificates styled-scroll">
+								<div class="sertificate-wrapper">
+									<a class="sertificate" href="img/sertificates/1.png" data-fancybox="sertificates" data-caption="Описание сертификата" >
+										<img src="img/sertificates/1.png" alt="">
+									</a>
+								</div>
+
+								<div class="sertificate-wrapper">
+									<a class="sertificate" href="img/sertificates/2.png" data-fancybox="sertificates" data-caption="Описание сертификата" >
+										<img src="img/sertificates/2.png" alt="">
+									</a>
+								</div>
+
+								<div class="sertificate-wrapper">
+									<a class="sertificate" href="img/sertificates/3.png" data-fancybox="sertificates" data-caption="Описание сертификата" >
+										<img src="img/sertificates/3.png" alt="">
+									</a>
+								</div>
+
+								<div class="sertificate-wrapper">
+									<a class="sertificate" href="img/sertificates/4.png" data-fancybox="sertificates" data-caption="Описание сертификата" >
+										<img src="img/sertificates/4.png" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+					</article>
+
+					<section class="sect__seo gutter-top-lg">
+						<div class="content content-lg-titles">
+							<h2>Быстрая оценка бриллиантов в Diamonds</h2>
+							<p>Наш ломбард проводит быструю оценку: мы гарантируем вам  самую высокую цену и прозрачные условия. Вы можете продать бриллиант или любые другие драгоценные камни.<br> Особый плюс нашей компании: бесплатная оценка украшений и оглашение предварительной стоимости в режиме онлайн. Мы карантируем своим клиентам: </p>
+							<ul>
+								<li>конфиденциальность;</li>
+								<li>оперативный ответ по заявке;</li>
+								<li>высокую стоимость.</li>
+							</ul>
+							<p>Мы не занижаем цены, стараемся обеспечить прозрачные условия для своих клиентов. В отличии от некоторых конкурентов, которые изначально завышают оценку, а при визуальном осмотре опускают цену до 50% от первоначальной (своей) цены озвученной по телефону.</p>
+							<p>Обращайтесь к нам: ваши украшения попадут в надежные руки и вы получите справедливую цену!</p>
+						</div>
+					</section>
+
+					<!-- Breadcrumbs -->
+					<div class="breadcrumbs">
+						<nav  aria-label="Breadcrumbs" itemprop="breadcrumb">
+							<ul class="breadcrumbs__list" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+
+								<li  itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+									<meta content="1" itemprop="position">
+									<a href="index.html" rel="home" aria-label="Главная" itemtype="https://schema.org/Thing" itemprop="item">
+										<span itemprop="name">
+											<span>Главная</span>
+										</span>
+									</a>
+								</li>
+
+								<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+									<meta content="2" itemprop="position">
+									<span class="is-active" itemtype="https://schema.org/Thing" itemprop="item">
+										<span itemprop="name">Оценка бриллианта</span>
+									</span>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<!-- //Breadcrumbs -->
+				</div>
+				<!-- //container -->
+			</section>
+
+
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/footer.html' %}
+		<!-- //Footer -->
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>

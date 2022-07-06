@@ -118,6 +118,12 @@
 			font-size 28px
 			line-height 31px
 			
+		&-lg-titles
+			h2
+				font-size 40px
+				line-height 46px
+				margin-bottom 32px
+			
 	.contacts-information
 		&__col
 			padding-left 15px
@@ -126,6 +132,17 @@
 			justify-content space-between
 			margin-left -15px
 			margin-right -15px
+			
+
+	.sect__service-entering 
+		.content 
+			h1
+				font-size 50px
+				margin-bottom 24px
+			h2
+				font-size 22px
+				line-height 24px
+				margin-bottom 24px
 
 
 +max-screen(1100px)
@@ -179,7 +196,14 @@
 
 		&__img
 		
-			max-width 300px
+			max-width 340px
+		
+		.btn
+			max-width 310px
+			
+	.sect__service-entering
+		.page-entering__img
+			margin-left 85px
 			
 
 	.offer
@@ -225,7 +249,32 @@
 		padding-bottom 160px
 		
 
+	// Service
+	.page-service
+		padding-top 66px
+		
+	.service-entering-text
+		font-size 18px
+		h1, h2
+			font-size 50px
+			line-height 50px
+			margin-bottom 18px
 
+	.sales-steps__content-img
+		width 210px
+		margin-right 30px
+		
+
+	.sales-step
+		&__counter
+			margin-right 17px
+		h3
+			font-size 19px
+			
+	.price-affects 
+		img
+			width 290px
+			
 
 				
 +max-screen(1024px)
@@ -240,14 +289,6 @@
 		margin-bottom 35px
 		
 			
-
-
-
-
-
-
-
-
 
 
 +max-screen(992px)
@@ -645,6 +686,7 @@
 		position relative
 		padding-bottom 85px
 		margin-bottom 85px
+	
 		&__img
 			width 255px
 			right 0
@@ -658,6 +700,24 @@
 				
 			p
 				max-width 90%
+				
+	.sect__service-entering
+		.page-entering__img
+			width 280px
+			vertical-center()
+			bottom auto
+			margin-left 0
+			margin-top -30px
+			
+		.content
+			h1
+				font-size 44px
+			h2
+				font-size 20px
+				
+		.btn
+			margin-top 50px
+			max-width 230px
 				
 
 	.offer
@@ -685,9 +745,136 @@
 			
 
 
+	// Service
+		
+	.service-entering-text
+		font-size 17px
+		line-height 22px
+		h1, h2
+			font-size 44px
+			line-height 44px
+			margin-bottom 18px
+			
+	.service-evaluation-form
+		.form-group
+			width 50%
+			&.tablet-full-width
+				width 100%
+				
+		.hidden-label
+			display none
+			
+		.form-file
+			margin-bottom 20px
+			margin-top 4px
+			
+		.form-notice
+			max-width 260px
+			
+		.form-submit
+			margin-top 4px
+			
+	.sect__service-evaluation
+		padding-bottom 70px
+		
+	.content-lg-titles
+		h2
+			font-size 36px
+			
+	.service-param
+		width 33.3333%
+		margin-bottom 40px
+		
+	.service-params
+		margin-bottom 0
+		
+	.service-shape
+		padding-left 10px
+		padding-right 10px
+		font-size 10px
+		img
+			width 48px
+			height 48px
+			margin-bottom 10px
+			
+		
+	.service-shapes
+		margin-left -10px
+		margin-right -10px
+	
 
+	.brand-logo
+		max-width 195px
+		width 33.3333%
+		align-items flex-start
+	
+	
+	.form-success
+		&__title
+			font-size 44px
+			margin-bottom 27px
+			
 
+	.service-benefit
+		flex-wrap wrap
+		flex-direction column
+		align-items flex-start
+		&__ic
+			margin-right 0
+			margin-bottom 12px
+			
 
+	.sect__service-entering
+		padding-bottom 150px
+		
+	.sect__sales-steps
+		padding-bottom 105px
+		
+	.sales-steps
+		&__content
+			position relative
+			&-img
+				width 140px
+				height 115px
+				position absolute
+				top 0
+				left 0
+			
+			.sect-title
+				padding-left 180px
+				max-width 90%
+				margin-bottom 38px
+				
+
+	.sales-steps
+		margin-left -10px
+		margin-right -10px
+		
+	.sales-step
+		width 50%
+		flex-wrap wrap
+		flex-direction column
+		align-items flex-start
+		font-size 15px
+		line-height 18px
+		padding-left 10px
+		padding-right 10px
+		&__counter
+			width 100%
+			margin-top 0
+			margin-right 0
+			margin-bottom 8px
+		
+		h3
+			font-size 17px
+			line-height 20px
+			margin-bottom 6px
+			br
+				display none
+				
+	.price-affects 
+		img
+			width 250px
 
 
 +max-screen(767px)
@@ -732,9 +919,6 @@
 
 	.sect__technical
 		min-height calc(100% - 60px)
-
-
-
 
 
 
@@ -1148,6 +1332,24 @@
 		img
 			margin 25px 0
 			
+	.content-lg-titles
+		h2
+			font-size 31px
+			line-height 34px
+			
+		p + h2,
+		ul + h2,
+		ol + h2,
+		img + h2
+			margin-top 80px
+			
+		p + h3,
+		ul + h3,
+		ol + h3,
+		img + h3
+			margin-top 70px
+			
+			
 	.breadcrumbs
 		li
 			padding-right 20px
@@ -1275,10 +1477,169 @@
 			margin-right 14px
 		
 
-
-
+	// Service
+	.service-entering-text 
+		margin-bottom 33px
+		h1, h2
+			font-size 33px
+			line-height 36px
+			letter-spacing -0.04em
+			margin-bottom 26px
+	
+	.service-evaluation-form
+		.form-notice
+			max-width 100%
+			
+	.service
+		.sect__advantages
+			padding-bottom 90px
+			
+	.service-param
+		width 50%
+		margin-bottom 40px
+		font-size 15px
+		img
+			margin-bottom 10px
+			width 42px
+			height 42px
 		
+	.service-params
+		margin-bottom 25px
+		
+	.service-shape
+		width 20%
+		img
+			width 44px
+			height 44px
+			margin 0 auto 10px auto
+			
+	.service-shapes
+		margin-top 45px
 
+
+	.service-content
+		padding-bottom 0
+
+	
+	.form-success
+		font-size 17px
+		line-height 22px
+		&__title
+			font-size 33px
+			margin-bottom 18px
+			
+
+	.sect__service-entering
+		.page-entering
+			padding-bottom 56px
+		.page-entering__img
+			width 75%
+			max-width 100%
+			transform none
+			top auto
+			bottom auto
+			margin-top 0
+			margin-bottom 12px
+			order 1
+			
+		.page-entering__content
+			order 2
+			
+		.content
+			h1
+				font-size 33px
+				line-height 37px
+			h2
+				font-size 19px
+				
+		.btn
+			margin-top 50px
+			max-width 230px
+
+	.service-benefit
+		width 50%
+		margin-bottom 36px
+		
+	.service-benefits
+		margin-bottom -36px		
+		
+	.sect__service-entering
+		padding-bottom 100px
+		
+	.sales-steps
+		&__content
+			flex-wrap wrap
+			&-img
+				position relative
+				top auto
+				left auto
+				width 67%
+				height auto
+				margin-right 0
+				margin-bottom 20px
+			
+			
+			.sect-title
+				padding-left 0
+				max-width 100%
+				margin-bottom 46px
+				
+	.sales-steps__content
+		margin-bottom 70px
+		
+	.page-sales-service .sect__service-evaluation
+		padding-bottom 110px
+		
+	.price-affects 
+		img
+			width 78%
+			&.alignright
+				float none
+				margin-left 0
+				margin-bottom 37px
+				
+	.sect__price-affects .btn
+		margin-top 37px
+		
+	.sect__price-affects
+		padding-bottom 130px
+		
+	.page-sales-service
+
+		.sect__feedbacks,
+		.feedbacks__row
+			padding-bottom 65px
+
+
+	.jewels-brand
+		padding-left 10px
+		padding-right 10px
+		margin-bottom 35px
+		width 50%
+		
+	.jewels-brands__row
+		margin-left -10px
+		margin-right -10px
+		margin-bottom -35px
+		
+	.stone-type__img
+		width 50px
+		height 50px
+		position absolute
+		top 0
+		left 0
+		flex-col-center()
+		img
+			@extends .content-img
+			
+	.stone-type
+		position relative
+		&__title
+			height 50px
+			display flex
+			align-items center
+			padding-left 70px
+			font-size 18px
 			
 
 +max-screen(550px)
@@ -1317,8 +1678,27 @@
 			max-width 180px
 
 
+	.sect__service-entering
+		.page-entering__img
+			width 100%
+			
+		.btn
+			max-width 100%
+			margin-top 30px
 
 
+	.service-benefit
+		font-size 15px
+		line-height 18px
+		&__ic
+			width 38px
+			height 38px
+			margin-bottom 12px
+			
+
+	.sales-step
+		&__counter
+			font-size 30px
 
 +max-screen(410px)
 	// Promo
@@ -1367,5 +1747,8 @@
 	.content
 		h1
 			font-size 27px
+			
+	.form-wrapper__row .form-wrapper
+		margin-bottom 110px
 			
 		

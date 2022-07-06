@@ -123,7 +123,6 @@ $(document).ready(function() {
 
 	var fileInputs = $('input[type=file]');
 
-	console.log(fileInputs)
 
 	if (fileInputs.length > 0) {
 
@@ -155,39 +154,79 @@ $(document).ready(function() {
 	
 	}
 
+	$('[data-fancybox').fancybox({
+		loop: true,
+		buttons: [
+			"zoom",
+			"close"
+		]
+	});
+
+	// ========= Ajax form ===========
+	$('.js-required-input').on('focus',function() {
+		var inputGroup = $(this).parents('.form-group');
+
+		if(inputGroup.hasClass('is-error')) {
+			inputGroup.removeClass('is-error');
+		}
+	});
+
+	var formSuccess = '<div class="form-success js-form-success">' +
+								'<button class="btn-close js-close-form-success-btn" type="button"><svg  viewBox="0 0 20 20"  xmlns="http://www.w3.org/2000/svg"><path d="M1.33398 18.6675L18.6679 1.33359"/><path d="M18.668 18.6675L1.33407 1.33359"/></svg></button>' +
+								'<p class="form-success__title">Спасибо!</p>' +
+								'<p>Мы рассмотрим вашу заявку и свяжемся с вами<br> в ближайшее время </p>' +
+							'</div>';
+
+	$('form').on('submit', function(e) {
+		e.preventDefault();
+
+		var that = $(this);
+			inputs = that.find('.js-required-input'),
+			flag = true;
+
+		var wrapper = that.parents('.form-wrapper');
+
+		
+		
+		
+		
+		// Validate
+		$(inputs).each(function() {
+			var inputGroup = $(this).parents('.form-group');
+
+			if(!$(this).val() || $(this).val() == "") {
+				inputGroup.addClass('is-error');
+				flag = false;
+			}
+		});
+
+		if(!flag) {return false;}
+
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: that.serialize()
+		}).done(function() {
+			if (wrapper.find('.js-form-success').length == 0) {
+				wrapper.append(formSuccess);
+				setTimeout(function() {
+					wrapper.addClass('is-active');
+				}, 100);
+			};
+			that.trigger("reset");
+		});
+
+	});
 
 
-	// var fileInputs = document.querySelectorAll( '.input__file' );
+	$('.form-wrapper').on('click', '.js-close-form-success-btn', function(e) {
+		e.preventDefault();
 
+		$(this).parents('.form-wrapper').removeClass('is-active');
+		$(this).parents('.js-form-success').remove();
+		
 
-	// Array.prototype.forEach.call( fileInputs, function( input ) {
-	// 	var label    = input.parentNode,
-	// 	labelVal = label.innerHTML;
-
-	// 	input.addEventListener('change', function(e) {
-	// 		var fileName = '',
-	// 		nextElem = label.nextElementSibling;
-
-	// 		if(nextElem.classList.contains('active')) {
-	// 			nextElem.classList.remove('active');
-	// 		}
-
-	// 		if( this.files && this.files.length > 1 ) {
-	// 			fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
-	// 		}
-	// 		else {
-	// 			fileName = e.target.value.split( '\\' ).pop();
-	// 		}
-
-	// 		if( fileName ) {	
-	// 			nextElem.innerHTML = fileName;
-	// 			nextElem.classList.add('is-active');
-	// 		} else {
-
-	// 			label.innerHTML = labelVal;
-	// 		}
-	// 	});
-	// });
+	});
 
 
 	$("input[type=tel]").inputmask({"mask": "+380 (99) 999 99 99","clearIncomplete": false});

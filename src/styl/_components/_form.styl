@@ -309,3 +309,40 @@
 							display block
 
 
+.form-wrapper
+	position relative
+	&.is-active
+		.form-success
+			opacity 1
+			visibility visible
+			pointer-events auto
+	
+.form-success
+	position absolute
+	top -2px
+	left -2px
+	bottom -5px
+	right -2px
+	z-index 3
+	background-color $color-bg
+	flex-col-center()
+	text-align center
+	font-size 19px
+	line-height 22px
+	color rgba($text-color, .8)
+	opacity 0
+	visibility hidden
+	pointer-events none
+	transition all .3s ease-in-out
+	padding 24px
+	
+	&__title
+		font 60px $Tenor
+		line-height 1
+		margin-bottom 27px
+		color $text-color
+	
+	.btn-close
+		position absolute
+		top 24px
+		right 24px

@@ -1,0 +1,229 @@
+{% include '../parts/head.html' %}
+<body>
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+		<!-- Header -->
+		{% include '../parts/sections/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main main-gutter-top page-gutter-bottom service">
+
+			<section class="sect__service-evaluation page-service gutter-bottom">
+
+				<div class="container">
+
+					<div class="service-evaluation">
+
+						<div class="service-entering-text content">
+							<h1>Оценка золота</h1>
+							<p>Хотите оценить золото, золотые монеты, слитки, старые украшени или лом золота? Получите бесплатную онлайн оценку, приложив несколько фото вашего изделия.</p>
+						</div>
+
+						<div class="form-wrapper service-evaluation-form">
+							<form>
+								<!-- Hidden inputs -->
+								<input type="hidden" name="project_name" value="Diamands">
+								<input type="hidden" name="form_subject" value="Оценка продукта">
+								<input type="hidden" name="page" value="Страница: ">
+								<!-- // Hidden inputs -->
+								<div class="row align-horisontal-start form-groups__row">
+									<div class="form-group col-w-25">
+										
+										<p class="form-label">Телефон</p>
+										<input type="tel" name="tel" class="form-input js-required-input" placeholder="+380 (__) ___ __ __">
+										<p class="form-error">Заполните это поле</p>
+										
+									</div>
+
+									<div class="form-group col-w-25">
+
+										<p class="form-label">Email</p>
+										<input type="email" name="email" class="form-input" placeholder="Ваш емейл">
+									</div>
+
+									<div class="form-group col-w-25">
+
+										<p class="form-label">Вес изделия*</p>
+										<input type="text" name="Вес изделия" class="form-input js-required-input" placeholder="Вес изделия">
+										<p class="form-error">Заполните это поле</p>
+									</div>
+
+									<div class="form-group col-w-25">
+
+										<p class="form-label">Проба золота</p>
+										<input type="text" name="Проба золота" class="form-input" placeholder="Проба золота">
+									</div>
+
+									
+
+									
+
+									<div class="form-group tablet-full-width col-w-50">
+										<p class="form-label">Описание предмета</p>
+										<textarea name="Описание" class="form-input form-textarea" placeholder="Расскажите про характеристики камня "></textarea>
+									</div>
+
+									<div class="form-group tablet-full-width form-group-file col-w-50">
+
+										<label class="form-file">
+											<p class="form-label hidden-label">Файл</p>
+											<input type="file" name="fileFF[]" multiple="" data-multiple-caption="Выбрано: {count} файла(ов)">
+											<span class="btn btn-transparent btn-with-ic f-f-regular form-file__attach">
+												<svg  viewBox="0 0 9 18"  xmlns="http://www.w3.org/2000/svg">
+													<path d="M4.375 17.25C6.655 17.25 8.5 15.405 8.5 13.125V4.5H7.375V13.125C7.375 14.7825 6.0325 16.125 4.375 16.125C2.7175 16.125 1.375 14.7825 1.375 13.125V3.75C1.375 3.25272 1.57254 2.77581 1.92417 2.42417C2.27581 2.07254 2.75272 1.875 3.25 1.875C3.74728 1.875 4.22419 2.07254 4.57583 2.42417C4.92746 2.77581 5.125 3.25272 5.125 3.75V11.625C5.125 12.0375 4.7875 12.375 4.375 12.375C3.9625 12.375 3.625 12.0375 3.625 11.625V4.5H2.5V11.625C2.5 12.1223 2.69754 12.5992 3.04917 12.9508C3.40081 13.3025 3.87772 13.5 4.375 13.5C4.87228 13.5 5.34919 13.3025 5.70083 12.9508C6.05246 12.5992 6.25 12.1223 6.25 11.625V3.75C6.25 2.0925 4.9075 0.75 3.25 0.75C1.5925 0.75 0.25 2.0925 0.25 3.75V13.125C0.25 15.405 2.095 17.25 4.375 17.25Z" />
+												</svg>
+												<span>Прикрепить фото</span>
+
+											</span>
+
+											<span class="btn btn-transparent btn-with-ic form-file__result">
+												<svg  viewBox="0 0 9 18"  xmlns="http://www.w3.org/2000/svg">
+													<path d="M4.375 17.25C6.655 17.25 8.5 15.405 8.5 13.125V4.5H7.375V13.125C7.375 14.7825 6.0325 16.125 4.375 16.125C2.7175 16.125 1.375 14.7825 1.375 13.125V3.75C1.375 3.25272 1.57254 2.77581 1.92417 2.42417C2.27581 2.07254 2.75272 1.875 3.25 1.875C3.74728 1.875 4.22419 2.07254 4.57583 2.42417C4.92746 2.77581 5.125 3.25272 5.125 3.75V11.625C5.125 12.0375 4.7875 12.375 4.375 12.375C3.9625 12.375 3.625 12.0375 3.625 11.625V4.5H2.5V11.625C2.5 12.1223 2.69754 12.5992 3.04917 12.9508C3.40081 13.3025 3.87772 13.5 4.375 13.5C4.87228 13.5 5.34919 13.3025 5.70083 12.9508C6.05246 12.5992 6.25 12.1223 6.25 11.625V3.75C6.25 2.0925 4.9075 0.75 3.25 0.75C1.5925 0.75 0.25 2.0925 0.25 3.75V13.125C0.25 15.405 2.095 17.25 4.375 17.25Z" />
+												</svg>
+												<span class="form-file__result--text">Выбрано: 2 файла(ов)</span>
+												<svg class="clear-ic" viewBox="0 0 11 12" xmlns="http://www.w3.org/2000/svg">
+													<path d="M0.833008 10.667L10.1666 1.33336"/>
+													<path d="M10.167 10.667L0.833356 1.33336"/>
+												</svg>
+											</span>
+										</label>
+
+										<label class="form-checkbox__label">
+											<input name="sertificate" type="checkbox">
+											<span class="form-checkbox">У меня есть документы о подлинности</span>
+										</label>
+
+									</div>
+
+									<div class="form-submit align-vertical-center col-w-100">
+										<button class="btn" type="submit">оценить золото</button>
+
+										<p class="form-notice">Нажимая на кнопку, подтверждаю согласие<br> с <a href="page-policy.html">политикой конфиденциальности</a></p>
+									</div>
+								</div>
+							</form>
+
+							
+						</div>
+
+
+					</div>
+				</div>
+				<!-- //container -->
+
+			</section>
+
+			{% include '../parts/sections/sect-advantages.html' %}
+
+			<section class="sect__service-content">
+
+				<div class="container">
+
+					<article class="service-content text-page">
+
+						<div class="content content-lg-titles">
+							<h2>От чего зависит цена золота при скупке?</h2>
+							<p>Стоимость выкупа может зависеть того что вы хотите продать: золотые слитки, инвестиционные монеты, антиквариат, ювелирные изделия, стоматологическое золото. При скупке золота мы смотрим на такие параметры:</p>
+
+							<div class="service-params">
+								<div class="service-param">
+									<img src="img/icons/svg/params/graph.svg" alt="">
+									<span>Рыночная цена</span>
+								</div>
+
+								<div class="service-param">
+									<img src="img/icons/svg/params/weight.svg" alt="">
+									<span>Вид изделия</span>
+								</div>
+
+								<div class="service-param">
+									<img src="img/icons/svg/params/scales.svg" alt="">
+									<span>Вес золота</span>
+								</div>
+
+								<div class="service-param">
+									<img src="img/icons/svg/params/standard.svg" alt="">
+									<span>Проба золота</span>
+								</div>
+
+								
+							</div>
+
+							<h3>Вид изделия</h3>
+							<p>Золотые слитки получаю самую высокую цену - это чистый драгоценный металл с сертификатом качества. Неповрежденная заводская упаковка слитка как гарантия качества. Инвестиционные золотые активы в монетах из-за своей редкости могут немного превышают стоимость золота за 1 грамм в слитках. Особенно редкие коллекционные золотые монеты.</p>
+							<img src="img/gold-2.jpg" alt="">
+							<p>Все другие золотые изделия, как правило принимаются на лом: их цена высчитывается исходя из соотношения проба и вес. Так золотые обручальные кольца, золотые мосты, золотые цепочки продаются на лом. Исключение брендовые украшения с драгоценными камнями премиального или luxury сегмента.</p>
+
+							<h3>Вес и проба золота</h3>
+							<p>Золотое изделие взвешивают на специальных весах с точностью до сотых грамма. Если в изделии имеются камни или вставки из другого металла их масса расчитывается и отнимается. </p>
+							<p>Проба золота это государственно принятый стандарт, который говорит о содержании драгоценного металла в сплаве из которого сделано изделие. Наиболее широкое применение получило выражение пробы в тысячных частях содержания золота -  трехзначное число. Какие пробы золота бывают: 333, 375, 500, 583,585, 750, 875, 916, 999. В некоторых странах используется измерение золота в каратах, где за целое золото берется 24 карата(ct). Очистка золота до 100% невозможна, поэтому самая высшая золотая проба составляет 999.99 и используется только в золотых слитках.</p>
+							<img src="img/gold.jpg" alt="">
+
+							<p>Проба на украшениях обозначается маркировкой, однако именник и клеймо довольно просто подделать. Поэтому существует множество других способов проверки золота: магнит, погружение в воду, надпил с последующей проверкой реактивом, пробирный камень либо спектральный анализ.</p>
+
+
+							
+						</div>
+					</article>
+
+					<section class="sect__seo gutter-top-lg">
+						<div class="content content-lg-titles">
+							<h2>Почему стоит продать золото в Diamonds</h2>
+							<p>Наш ломбард проводит быструю оценку: мы гарантируем вам  самую высокую цену и прозрачные условия. Вы можете продать бриллиант или любые другие драгоценные камни.<br> Особый плюс нашей компании: бесплатная оценка украшений и оглашение предварительной стоимости в режиме онлайн. Мы карантируем своим клиентам: </p>
+							<ul>
+								<li>конфиденциальность;</li>
+								<li>оперативный ответ по заявке;</li>
+								<li>высокую стоимость.</li>
+							</ul>
+							<p>Мы не занижаем цены, стараемся обеспечить прозрачные условия для своих клиентов. В отличии от некоторых конкурентов, которые изначально завышают оценку, а при визуальном осмотре опускают цену до 50% от первоначальной (своей) цены озвученной по телефону.</p>
+							<p>Обращайтесь к нам: ваши украшения попадут в надежные руки и вы получите справедливую цену!</p>
+						</div>
+					</section>
+
+					<!-- Breadcrumbs -->
+					<div class="breadcrumbs">
+						<nav  aria-label="Breadcrumbs" itemprop="breadcrumb">
+							<ul class="breadcrumbs__list" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+
+								<li  itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+									<meta content="1" itemprop="position">
+									<a href="index.html" rel="home" aria-label="Главная" itemtype="https://schema.org/Thing" itemprop="item">
+										<span itemprop="name">
+											<span>Главная</span>
+										</span>
+									</a>
+								</li>
+
+								<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+									<meta content="2" itemprop="position">
+									<span class="is-active" itemtype="https://schema.org/Thing" itemprop="item">
+										<span itemprop="name">Оценка ювелирных изделий</span>
+									</span>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<!-- //Breadcrumbs -->
+				</div>
+				<!-- //container -->
+			</section>
+
+
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/footer.html' %}
+		<!-- //Footer -->
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>

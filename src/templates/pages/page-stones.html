@@ -1,0 +1,353 @@
+{% include '../parts/head.html' %}
+<body>
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+		<!-- Header -->
+		{% include '../parts/sections/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main main-gutter-top page-gutter-bottom service">
+
+			<section class="sect__service-evaluation page-service gutter-bottom">
+
+				<div class="container">
+
+					<div class="service-evaluation">
+
+						<div class="service-entering-text content">
+							<h1>Оценка драгоценных камней</h1>
+							<p>Хотите оценить драгоценный камень отдельно или в изделие? Получите бесплатную онлайн оценку, приложив фото драгоценного камня и геммологического сертификата.</p>
+						</div>
+
+						<div class="form-wrapper service-evaluation-form">
+							<form>
+								<!-- Hidden inputs -->
+								<input type="hidden" name="project_name" value="Diamands">
+								<input type="hidden" name="form_subject" value="Оценка продукта">
+								<input type="hidden" name="page" value="Страница: ">
+								<!-- // Hidden inputs -->
+								<div class="row align-horisontal-start form-groups__row">
+									<div class="form-group col-w-25">
+										
+										<p class="form-label">Телефон</p>
+										<input type="tel" name="tel" class="form-input js-required-input" placeholder="+380 (__) ___ __ __">
+										<p class="form-error">Заполните это поле</p>
+										
+									</div>
+
+									<div class="form-group col-w-25">
+
+										<p class="form-label">Email</p>
+										<input type="email" name="email" class="form-input" placeholder="Ваш емейл">
+										
+									</div>
+
+									<div class="form-group col-w-25">
+										<div class="form-select__wrapper">
+											<p class="form-label">Вид камня*</p>
+											<div class="form-select js-select">
+												<input type="text" name="вид камня" class="form-input js-required-input"  placeholder="Выберите тип камня" readonly> 
+
+												<div class="form-select__options">
+													<ul>
+														<li data-value="Камень 1">Камень 1</li>
+														<li data-value="Камень 2">Камень 2</li>
+														<li data-value="Камень 3">Камень 3</li>
+														<li data-value="Камень 4">Камень 4</li>
+													</ul>
+												</div>
+											</div>
+											<p class="form-error">Заполните это поле</p>
+										</div>
+									</div>
+
+									<div class="form-group col-w-25">
+
+										<p class="form-label">Вес камня</p>
+										<input type="text" name="Вес камня" class="form-input" placeholder="Вес камня">
+										<p class="form-error">Заполните это поле</p>
+									</div>
+
+									<div class="form-group tablet-full-width col-w-50">
+										<p class="form-label">Описание предмета</p>
+										<textarea name="Описание" class="form-input form-textarea" placeholder="Расскажите про характеристики камня "></textarea>
+									</div>
+
+									<div class="form-group tablet-full-width form-group-file col-w-50">
+
+										<label class="form-file">
+											<p class="form-label hidden-label">Файл</p>
+											<input type="file" name="fileFF[]" multiple="" data-multiple-caption="Выбрано: {count} файла(ов)">
+											<span class="btn btn-transparent btn-with-ic f-f-regular form-file__attach">
+												<svg  viewBox="0 0 9 18"  xmlns="http://www.w3.org/2000/svg">
+													<path d="M4.375 17.25C6.655 17.25 8.5 15.405 8.5 13.125V4.5H7.375V13.125C7.375 14.7825 6.0325 16.125 4.375 16.125C2.7175 16.125 1.375 14.7825 1.375 13.125V3.75C1.375 3.25272 1.57254 2.77581 1.92417 2.42417C2.27581 2.07254 2.75272 1.875 3.25 1.875C3.74728 1.875 4.22419 2.07254 4.57583 2.42417C4.92746 2.77581 5.125 3.25272 5.125 3.75V11.625C5.125 12.0375 4.7875 12.375 4.375 12.375C3.9625 12.375 3.625 12.0375 3.625 11.625V4.5H2.5V11.625C2.5 12.1223 2.69754 12.5992 3.04917 12.9508C3.40081 13.3025 3.87772 13.5 4.375 13.5C4.87228 13.5 5.34919 13.3025 5.70083 12.9508C6.05246 12.5992 6.25 12.1223 6.25 11.625V3.75C6.25 2.0925 4.9075 0.75 3.25 0.75C1.5925 0.75 0.25 2.0925 0.25 3.75V13.125C0.25 15.405 2.095 17.25 4.375 17.25Z" />
+												</svg>
+												<span>Прикрепить фото</span>
+
+											</span>
+
+											<span class="btn btn-transparent btn-with-ic form-file__result">
+												<svg  viewBox="0 0 9 18"  xmlns="http://www.w3.org/2000/svg">
+													<path d="M4.375 17.25C6.655 17.25 8.5 15.405 8.5 13.125V4.5H7.375V13.125C7.375 14.7825 6.0325 16.125 4.375 16.125C2.7175 16.125 1.375 14.7825 1.375 13.125V3.75C1.375 3.25272 1.57254 2.77581 1.92417 2.42417C2.27581 2.07254 2.75272 1.875 3.25 1.875C3.74728 1.875 4.22419 2.07254 4.57583 2.42417C4.92746 2.77581 5.125 3.25272 5.125 3.75V11.625C5.125 12.0375 4.7875 12.375 4.375 12.375C3.9625 12.375 3.625 12.0375 3.625 11.625V4.5H2.5V11.625C2.5 12.1223 2.69754 12.5992 3.04917 12.9508C3.40081 13.3025 3.87772 13.5 4.375 13.5C4.87228 13.5 5.34919 13.3025 5.70083 12.9508C6.05246 12.5992 6.25 12.1223 6.25 11.625V3.75C6.25 2.0925 4.9075 0.75 3.25 0.75C1.5925 0.75 0.25 2.0925 0.25 3.75V13.125C0.25 15.405 2.095 17.25 4.375 17.25Z" />
+												</svg>
+												<span class="form-file__result--text">Выбрано: 2 файла(ов)</span>
+												<svg class="clear-ic" viewBox="0 0 11 12" xmlns="http://www.w3.org/2000/svg">
+													<path d="M0.833008 10.667L10.1666 1.33336"/>
+													<path d="M10.167 10.667L0.833356 1.33336"/>
+												</svg>
+											</span>
+										</label>
+
+										<label class="form-checkbox__label">
+											<input name="sertificate" type="checkbox">
+											<span class="form-checkbox">У меня есть документы о подлинности</span>
+										</label>
+
+									</div>
+
+									<div class="form-submit align-vertical-center col-w-100">
+										<button class="btn" type="submit">оценить камень</button>
+
+										<p class="form-notice">Нажимая на кнопку, подтверждаю согласие<br> с <a href="page-policy.html">политикой конфиденциальности</a></p>
+									</div>
+								</div>
+							</form>
+
+							
+						</div>
+
+
+					</div>
+				</div>
+				<!-- //container -->
+
+			</section>
+
+			{% include '../parts/sections/sect-advantages.html' %}
+
+			<section class="sect__service-content">
+
+				<div class="container">
+
+					<article class="service-content text-page">
+
+						<div class="content content-lg-titles">
+							<h2>От чего зависит цена драгоценных камней?</h2>
+							<p>Оценка драгоценных камней относится к многоэтапным задачам, требующим профессиональный подход геммолога. Обычно процедура требует использования специализированного оборудования. Однако при наличии геммологического сертификата на камень мы сможем провсети оценку онлайн по фотографиям камня и сертифика. Всего за 10 минут наш специалист сможет сориентировать вас по стоимости драгоценного камня. Параметры оценки драгоценных камней похожи на те, что используются при работе с бриллиантами:</p>
+
+							<div class="service-params">
+								<div class="service-param">
+									<img src="img/icons/svg/params/types.svg" alt="">
+									<span>Вид камня</span>
+								</div>
+
+								<div class="service-param">
+									<img src="img/icons/svg/params/specials.svg" alt="">
+									<span>Особенность цвета</span>
+								</div>
+
+								<div class="service-param">
+									<img src="img/icons/svg/params/planet.svg" alt="">
+									<span>Происхождение</span>
+								</div>
+
+								<div class="service-param">
+									<img src="img/icons/svg/params/scales.svg" alt="">
+									<span>Вес и размер</span>
+								</div>
+
+								<div class="service-param">
+									<img src="img/icons/svg/params/symmetry.svg" alt="">
+									<span>Качество огранки</span>
+								</div>
+
+								<div class="service-param">
+									<img src="img/icons/svg/params/purity.svg" alt="">
+									<span>Чистота камня</span>
+								</div>
+							</div>
+
+							<p>Если вы хотите продать украшение или драгоценный камень без сертификата, то оценить его будет возможно только при личной встрече. Для этого также заполните заявку на оценку и укажите максимум известной информации о камне. Драгоценные камни без специализированной экспертизы и идентификации продать довольно сложно.</p>
+
+							<h3>Виды драгоценных камней</h3>
+							<p>Драгоценные камни это разные по составу и строению минералы, которые отличаются великолепными внешними свойствами: манят своим ярким цветом, сверкают и переливаются на солнце. Драгоценные камни самую широкую сферу применения получили в ювелирном искусстве, хотя могут также служить банковскими активами.<br> К самым дорогим по стоимости драгоценным камням 1 порядка относят изумруд, алмаз, сапфир, рубин, александрит. </p>
+
+							<div class="stone-types">
+								<div class="stone-type">
+									<div class="stone-type__img">
+									<img src="img/types/1.png" alt="">
+									</div>
+									<div class="stone-type__content">
+										<p class="stone-type__title">Изумруд</p>
+										<p>Изумруды это прозрачная зеленая разновидность берилла. Натуральные крупные изумруды ярко зеленого или травяного цвета цвета без дефектов и трещинок размером более 5 карат стоят дороже даже чем бриллианты. </p>
+									</div>
+								</div>
+
+								<div class="stone-type">
+									<div class="stone-type__img">
+									<img src="img/types/2.png" alt="">
+									</div>
+
+									<div class="stone-type__content">
+										<p class="stone-type__title">Алмаз</p>
+										<p>Алмазы обладают феноминальной твердостью среди других минералов. Больше всего ценятся прозрачные бесцветные алмазы, но встречаются и с желтым и коричневым оттенком. Правильно ограненные алмазы называют бриллиантами. Цена бесцветного бриллианта с чистотой	IF по шкале GIA стоит около 20 тысяч долларов за 1 карат. Чтоб продать бриллиан оставьте заявку на этой странице.</p>
+									</div>
+								</div>
+
+								<div class="stone-type">
+									<div class="stone-type__img">
+									<img src="img/types/3.png" alt="">
+									</div>
+									
+									<div class="stone-type__content">
+										<p class="stone-type__title">Сапфир</p>
+										<p>Драгоценный камень 1 порядка, прозрачная или полупрозрачная разновидность корунда глубокого синего цвета. Встречаются также фиолетовые, желтые, оранжевые, зеленые и розовые, но они на порядок ниже по ценности. </p>
+									</div>
+								</div>
+
+								<div class="stone-type">
+									<div class="stone-type__img">
+									<img src="img/types/4.png" alt="">
+									</div>
+									
+									<div class="stone-type__content">
+										<p class="stone-type__title">Рубин</p>
+										<p>Драгоценный камень, прозрачная разновидность корунда красного цвета. Отличается большой твердостью и своим ярким цветом. Самые дорогие рубины - чистые камни с ярко красным насыщенным окрасом. Цена безупречного рубина размером 1 карат до 15 тысяч долларов. </p>
+									</div>
+								</div>
+
+								<div class="stone-type">
+									<div class="stone-type__img">
+									<img src="img/types/5.png" alt="">
+									</div>
+									
+									<div class="stone-type__content">
+										<p class="stone-type__title">Александрит</p>
+										<p>Необычайно редко встречающаяся в природе разновидность хризоберилла, которая имеет интересное свойство менять свою окраску в зависимости от угла зрения и освещения. Цвет может перелиается от сине-зелёного, зелёного, оливкового при дневном свете до розового, красно-фиолетового в вечернем свете. Цена натурального александрита от 5 до 37 тысяч долларов за 1 карат.</p>
+									</div>
+								</div>
+							</div>
+							
+
+							<h3>Особенность цвета</h3>
+							<p>Разноцветные драгоценные камни ценятся в первую очередь благодаря своим цветовым характеристикам. Существует три измерения цвета: оттенок, насыщенность и тон. Однако при оценке цвета драгоценных камней необходимо учитывать еще однородность цвета. Для разных типов камней существет свой оптимальный цветовой диапазон.</p>
+							<p>Цветовая насыщенность может зависеть также от размера камня. Так 4 изумруда разных размеров вырезанные из однородного по цвету камня имеют различную яркость цвета. Наиболее лучшие характеристики насыщенности цвета для изумруда имеет камень с размером 7.5 мм, большие камни слишком темные, а последний почти прозрачный. Стоимость камня значительно падает если он настолько темный, что через него почти ничего нельзя разглядеть.</p>
+							<img src="img/stones.jpg" alt="">
+							<p>Натуральные камни не могут быть идеально одинакового цвета по всей площади, поэтому существует такое понятие как цветовая зональность - градиенты цвета и переходы насыщенности. Видимая цветовая зональность может варьироваться от незначительной до явной. Если огранщик хорошо спрятал неоднородность цвета благодаря тщательному планированию расположения граней, это мало повлияет на стоимость.</p>
+
+							<h3>Происхождение и месторождение</h3>
+							<p>Местоположение или страна происхождения драгоценного камня является ключевым фактором в ценобразовании. Известные месторождения драгоценных камней гарантируют великолепные характеристики и определнные особенности: Бразильский сапфир, Кашмирские рубины, Австралийский изумруд, турмалин Параиба. Отчет GIA по идентификации должен содержать сведения о происхождении цветных камней или месторождении.</p>
+
+							<h3>Вес и размер драгоценных камней</h3>
+							<p>Вес драгоценных камней измеряется в каратах (ct), что равняется 0.2 грамма и измеряется при помощи каратных весов. Драгоценные камни обладают различной плотностью, поэтому камни разного вида с одинаковым размером будут весить по-разному. Так круглые бриллиант, сапфир и опал с диаметром 6,5 мм будут весить соответсвенно: бриллиант 1 карат, сапфир 1,14 карата, опал 0,61 карата.</p>
+
+							<h3>Форма и качество огранки</h3>
+							<p>Простой цветной камень становится драгоценным лишь при хорошей огранке. Огранка драгоценного камня влиет не только на форму, но и на его красоту, сияние, цвет. Естественная огранка может иметь намеренно смещенные грани и ассиметрию, в отличии от более точной промышленной.</p>
+							<img src="img/stones-2.jpg" alt="">
+							<p>Хорошая огранка добавляет камню 10-40% стоимости, а неудачная может все испортить. Когда центральные (или основные) грани обрезаны слишком мелко для данного драгоценного камня, то в этом месте видно что находится за камнем. По мере того как грязь скапливается вокруг края крепления в изделии, она становится заметной и делает визуально цвет камня мутным и грязным.</p>
+
+
+							<h3>Чистота дрвгоценного камня</h3>
+							<p>Мелкие полосочки и вкрапления в камне препятствуют ясному восприятию цвета, но допускаются в драгоценных камнях, если другие их свойства на высоком уровне. Камни без видимых глазу вкраплений очень редкие, их называют “чистыми как слеза”.</p>
+
+
+							<h2>Геммологический сертификат </h2>
+							<p>Геммологический сертификат представляет собой отчет об идентификации драгоценного камня. Он описывает, является ли данный камень натуральным или синтетическим, определяет тип камня и характеризует любые поддающиеся обнаружению обработки. Геммологический сертификат содержит подробное описание драгоценного камня, в том числе огранки, формы, веса, размера и цвета, прозачности, а также его фотографию.</p>
+
+							<h3>Примеры сертификата</h3>
+
+							<div class="sertificates styled-scroll">
+								<div class="sertificate-wrapper">
+									<a class="sertificate" href="img/sertificates/5.jpg" data-fancybox="sertificates" data-caption="Описание сертификата" >
+										<img src="img/sertificates/5.jpg" alt="">
+									</a>
+								</div>
+
+								<div class="sertificate-wrapper">
+									<a class="sertificate" href="img/sertificates/6.jpg" data-fancybox="sertificates" data-caption="Описание сертификата" >
+										<img src="img/sertificates/6.jpg" alt="">
+									</a>
+								</div>
+
+								<div class="sertificate-wrapper">
+									<a class="sertificate" href="img/sertificates/7.jpg" data-fancybox="sertificates" data-caption="Описание сертификата" >
+										<img src="img/sertificates/7.jpg" alt="">
+									</a>
+								</div>
+
+								<div class="sertificate-wrapper">
+									<a class="sertificate" href="img/sertificates/8.jpg" data-fancybox="sertificates" data-caption="Описание сертификата" >
+										<img src="img/sertificates/8.jpg" alt="">
+									</a>
+								</div>
+
+								<div class="sertificate-wrapper">
+									<a class="sertificate" href="img/sertificates/9.jpg" data-fancybox="sertificates" data-caption="Описание сертификата" >
+										<img src="img/sertificates/9.jpg" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+					</article>
+
+					<section class="sect__seo gutter-top-lg">
+						<div class="content content-lg-titles">
+							<h2>Почему стоит продать драгоценный камень в Diamonds</h2>
+							<p>Наш ломбард проводит быструю оценку: мы гарантируем вам  самую высокую цену и прозрачные условия. Вы можете продать бриллиант или любые другие драгоценные камни.<br> Особый плюс нашей компании: бесплатная оценка украшений и оглашение предварительной стоимости в режиме онлайн. Мы карантируем своим клиентам: </p>
+							<ul>
+								<li>конфиденциальность;</li>
+								<li>оперативный ответ по заявке;</li>
+								<li>высокую стоимость.</li>
+							</ul>
+							<p>Мы не занижаем цены, стараемся обеспечить прозрачные условия для своих клиентов. В отличии от некоторых конкурентов, которые изначально завышают оценку, а при визуальном осмотре опускают цену до 50% от первоначальной (своей) цены озвученной по телефону.</p>
+							<p>Обращайтесь к нам: ваши украшения попадут в надежные руки и вы получите справедливую цену!</p>
+						</div>
+					</section>
+
+					<!-- Breadcrumbs -->
+					<div class="breadcrumbs">
+						<nav  aria-label="Breadcrumbs" itemprop="breadcrumb">
+							<ul class="breadcrumbs__list" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+
+								<li  itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+									<meta content="1" itemprop="position">
+									<a href="index.html" rel="home" aria-label="Главная" itemtype="https://schema.org/Thing" itemprop="item">
+										<span itemprop="name">
+											<span>Главная</span>
+										</span>
+									</a>
+								</li>
+
+								<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+									<meta content="2" itemprop="position">
+									<span class="is-active" itemtype="https://schema.org/Thing" itemprop="item">
+										<span itemprop="name">Оценка драгоценных камней</span>
+									</span>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<!-- //Breadcrumbs -->
+				</div>
+				<!-- //container -->
+			</section>
+
+
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/footer.html' %}
+		<!-- //Footer -->
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>
