@@ -140,3 +140,19 @@
 		font 20px $Med
 		margin-bottom 10px !important
 		
+
+.double-imgs
+	background-color $color-bg
+	display flex
+	flex-wrap nowrap
+	margin 35px 0
+	overflow hidden
+.double-img
+	width 50%
+	flex-col-center()
+	padding 10px
+	&:first-child
+		padding-bottom 0
+	img
+		@extends .content-img
+		margin 0

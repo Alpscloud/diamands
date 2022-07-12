@@ -346,11 +346,11 @@
 					<div class="row form-wrapper__row row-nowrap">
 						
 						<div class="form-wrapper">
-							<form>
+							<form enctype="multipart/form-data">
 								<!-- Hidden inputs -->
 								<input type="hidden" name="project_name" value="Diamands">
-								<input type="hidden" name="form_subject" value="Заявка на оценку">
-								<input type="hidden" name="page" value="Страница: ">
+								<input type="hidden" name="form_subject" value="Заявка с сайта Diamands">
+								<input type="hidden" name="page" value="Страница: Заголовок страницы. Ссылка: url">
 								<!-- // Hidden inputs -->
 								<div class="row align-horisontal-start form-groups__row">
 									<div class="form-group col-w-50">
@@ -372,7 +372,7 @@
 										<div class="form-select__wrapper">
 											<p class="form-label">Вид камня</p>
 											<div class="form-select js-select">
-												<input type="text" name="вид камня" class="form-input"  placeholder="Выберите тип камня" readonly> 
+												<input type="text" name="type" class="form-input"  placeholder="Выберите тип камня" readonly> 
 
 												<div class="form-select__options">
 													<ul>
@@ -759,12 +759,12 @@
 							<p class="sect-description">Остались вопросы? Оставьте свой номер<br> и специалист свяжется с вами.</p>
 
 							<div class="form-wrapper">
-								<form>
-									<!-- Hidden inputs -->
-									<input type="hidden" name="project_name" value="Diamands">
-									<input type="hidden" name="form_subject" value="Бесплатная консультация">
-									<input type="hidden" name="page" value="Страница: ">
-									<!-- // Hidden inputs -->
+								<form enctype="multipart/form-data">
+								<!-- Hidden inputs -->
+								<input type="hidden" name="project_name" value="Diamands">
+								<input type="hidden" name="form_subject" value="Заявка с сайта Diamands">
+								<input type="hidden" name="page" value="Страница: Заголовок страницы. Ссылка: url">
+								<!-- // Hidden inputs -->
 									<div class="form-group">
 										<p class="form-label">Телефон</p>
 										<input type="tel" name="tel" class="form-input js-required-input" placeholder="+380 (__) ___ __ __">
@@ -773,7 +773,7 @@
 
 									<div class="form-group">
 										<p class="form-label">Ваш вопрос</p>
-										<textarea name="message" class="form-textarea form-input js-required-input"></textarea>
+										<textarea name="description" class="form-textarea form-input js-required-input"></textarea>
 										<p class="form-error">Заполните это поле</p>
 									</div>
 

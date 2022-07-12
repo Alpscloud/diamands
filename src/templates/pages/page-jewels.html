@@ -23,11 +23,11 @@
 						</div>
 
 						<div class="form-wrapper service-evaluation-form">
-							<form>
+							<form enctype="multipart/form-data">
 								<!-- Hidden inputs -->
 								<input type="hidden" name="project_name" value="Diamands">
-								<input type="hidden" name="form_subject" value="Оценка продукта">
-								<input type="hidden" name="page" value="Страница: ">
+								<input type="hidden" name="form_subject" value="Заявка с сайта Diamands">
+								<input type="hidden" name="page" value="Страница: Заголовок страницы. Ссылка: url">
 								<!-- // Hidden inputs -->
 								<div class="row align-horisontal-start form-groups__row">
 									<div class="form-group col-w-25">
@@ -47,14 +47,15 @@
 									<div class="form-group col-w-25">
 
 										<p class="form-label">Бренд*</p>
-										<input type="text" name="Бренд" class="form-input js-required-input" placeholder="Производитель">
+										<input type="text" name="brand" class="form-input js-required-input" placeholder="Производитель">
 										<p class="form-error">Заполните это поле</p>
 									</div>
 
 									<div class="form-group col-w-25">
 
 										<p class="form-label">Вес изделия*</p>
-										<input type="text" name="Вес камня" class="form-input" placeholder="Вес камня">
+										<input type="text" name="weight" class="form-input" placeholder="Вес камня">
+										<p class="form-error">Заполните это поле</p>
 									</div>
 
 									
@@ -63,7 +64,7 @@
 
 									<div class="form-group tablet-full-width col-w-50">
 										<p class="form-label">Описание предмета</p>
-										<textarea name="Описание" class="form-input form-textarea" placeholder="Расскажите про характеристики камня "></textarea>
+										<textarea name="description" class="form-input form-textarea" placeholder="Расскажите про характеристики камня "></textarea>
 									</div>
 
 									<div class="form-group tablet-full-width form-group-file col-w-50">
@@ -166,7 +167,16 @@
 							<h3>Проба и вес драгоценного металла</h3>
 							<p>Основную стоимость ювелирных изделий составляет наличие в них доли драгоценного металла: золота, платины, серебра и палладия. Цена на драгоценные металлы напрямую зависит от спроса на бирже, поэтому может колеблится в зависимости от условий рынка и мировой экономики. </p>
 							<p>Для ювелирных изделий не используется драгоценный металл в чистом виде, а лишь его сплав. Содержание в сплаве драгоценных металлов обозначается пробой, которая нанесена на ювелирное украшение.</p>
-							<img src="img/prices.jpg" alt="">
+
+							<div class="double-imgs">
+								<div class="double-img">
+									<img src="img/double-1.png" alt="">
+								</div>
+								<div class="double-img">
+									<img src="img/double-2.png" alt="">
+								</div>
+							</div>
+						
 
 							<p>Проба в брендовых украшениях обозначена, как правило, трехзначным числом. Двухзначное число говорит о том, что это каратная проба. В ювелирных украшениях из золота встречаются такие пробы: 583, 750, 875, 916. Например, 750 проба говорит о 75% содержании золота в сплаве и равняется 18 каратам. Проба серебра в брендовых украшениях может быть не менее 925. Украшения из платины могут иметь такие пробы 850, 900, 950. Пробы для украшений из палладия 600, 800, 850, 900, 950.</p>
 

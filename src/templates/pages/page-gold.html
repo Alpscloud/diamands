@@ -23,11 +23,11 @@
 						</div>
 
 						<div class="form-wrapper service-evaluation-form">
-							<form>
+							<form enctype="multipart/form-data">
 								<!-- Hidden inputs -->
 								<input type="hidden" name="project_name" value="Diamands">
-								<input type="hidden" name="form_subject" value="Оценка продукта">
-								<input type="hidden" name="page" value="Страница: ">
+								<input type="hidden" name="form_subject" value="Заявка с сайта Diamands">
+								<input type="hidden" name="page" value="Страница: Заголовок страницы. Ссылка: url">
 								<!-- // Hidden inputs -->
 								<div class="row align-horisontal-start form-groups__row">
 									<div class="form-group col-w-25">
@@ -47,14 +47,14 @@
 									<div class="form-group col-w-25">
 
 										<p class="form-label">Вес изделия*</p>
-										<input type="text" name="Вес изделия" class="form-input js-required-input" placeholder="Вес изделия">
+										<input type="text" name="weight" class="form-input js-required-input" placeholder="Вес изделия">
 										<p class="form-error">Заполните это поле</p>
 									</div>
 
 									<div class="form-group col-w-25">
 
 										<p class="form-label">Проба золота</p>
-										<input type="text" name="Проба золота" class="form-input" placeholder="Проба золота">
+										<input type="text" name="standart" class="form-input" placeholder="Проба золота">
 									</div>
 
 									
@@ -63,7 +63,7 @@
 
 									<div class="form-group tablet-full-width col-w-50">
 										<p class="form-label">Описание предмета</p>
-										<textarea name="Описание" class="form-input form-textarea" placeholder="Расскажите про характеристики камня "></textarea>
+										<textarea name="description" class="form-input form-textarea" placeholder="Расскажите про характеристики камня "></textarea>
 									</div>
 
 									<div class="form-group tablet-full-width form-group-file col-w-50">

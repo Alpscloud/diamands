@@ -58,13 +58,19 @@
 							<p class="sect-description">Задайте свой вопрос или запишитесь на консультацию. Наши специалисты свяжутся с вами.</p>
 
 							<div class="form">
-								<form>
+								<form enctype="multipart/form-data">
+									<!-- Hidden inputs -->
+									<input type="hidden" name="project_name" value="Diamands">
+									<input type="hidden" name="form_subject" value="Заявка с сайта Diamands">
+									<input type="hidden" name="page" value="Страница: Заголовок страницы. Ссылка: url">
+									<!-- // Hidden inputs -->
+
 									<div class="row form-groups__row row-nowrap">
 
 										<div class="form-group__col col-w-33">
 											<div class="form-group form-group__message">
 												<p class="form-label">Ваш вопрос</p>
-												<textarea name="message" class="form-input form-textarea"></textarea>
+												<textarea name="description" class="form-input form-textarea"></textarea>
 											</div>
 										</div>
 
