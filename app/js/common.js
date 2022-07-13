@@ -17,10 +17,12 @@ $(document).ready(function() {
 		}, 200);
 	});
 
+	var headerHeight = $('.header').innerHeight();
+
 	$('.js-smooth-scroll-link').on('click', function (e) {
 		e.preventDefault();
 		var id = $(this).attr('href'),
-			top = $(id).offset().top - 70;
+			top = $(id).offset().top - headerHeight - 20;
 
 		$('html, body').animate({scrollTop: top}, 300);
 	});	
@@ -206,7 +208,7 @@ $(document).ready(function() {
 			contentType: false,
 			processData: false,
 			type: "POST",
-			url: "sendmail.php", //Change
+			url: "/wp-content/themes/diamands-theme/sendmail.php", //Change
 			data: formData,
 		}).done(function() {
 			if (wrapper.find('.js-form-success').length == 0) {
