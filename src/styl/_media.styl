@@ -780,14 +780,37 @@
 	.content-lg-titles
 		h2
 			font-size 36px
-			
+		
+	.content
+		.su-row
+			&.service-params
+				margin-bottom 0
+				.su-column
+					width 33.3333% !important
+					margin-bottom 40px
+						
 	.service-param
 		width 33.3333%
 		margin-bottom 40px
 		
 	.service-params
 		margin-bottom 0
-		
+	
+	.content
+		.su-row
+			&.service-shapes
+				margin-left -10px
+				margin-right -10px
+				
+				.su-column
+					padding-left 10px
+					padding-right 10px
+					font-size 10px
+					img
+						width 48px
+						height 48px
+						margin-bottom 10px
+						
 	.service-shape
 		padding-left 10px
 		padding-right 10px
@@ -802,6 +825,13 @@
 		margin-left -10px
 		margin-right -10px
 	
+	.content
+		.su-row
+			&.brands-logos
+				.su-column
+					max-width 195px
+					width 33.3333%
+					align-items flex-start
 
 	.brand-logo
 		max-width 195px
@@ -884,6 +914,9 @@
 		
 	.main-gutter-top
 		padding-top 59px
+		
+	.su-row .su-column+.su-column
+		margin 0
 		
 	// Header
 	.header-contacts
@@ -1365,6 +1398,12 @@
 		flex-wrap wrap
 		flex-direction column-reverse
 		
+	.content
+		.su-row
+			&.double-imgs
+				.su-column
+					width 100%
+					
 	.double-img
 		width 100%
 		
@@ -1500,7 +1539,19 @@
 	.service
 		.sect__advantages
 			padding-bottom 90px
-			
+	
+	.content
+		.su-row
+			&.service-params
+				margin-bottom 25px
+				.su-column
+					width 50% !important
+					font-size 15px
+					img
+						margin-bottom 10px
+						width 42px
+						height 42px
+							
 	.service-param
 		width 50%
 		margin-bottom 40px
@@ -1512,6 +1563,17 @@
 		
 	.service-params
 		margin-bottom 25px
+		
+	.content
+		.su-row
+			&.service-shapes
+				margin-top 45px
+				.su-column
+					width 20%
+					img
+						width 44px
+						height 44px
+						margin 0 auto 10px auto
 		
 	.service-shape
 		width 20%
@@ -1638,6 +1700,20 @@
 		flex-col-center()
 		img
 			@extends .content-img
+			
+	.content
+		.su-row
+			&.stone-type
+				position relative
+				.su-column:first-child
+					width 50px
+					height 50px
+					position absolute
+					top 0
+					left 0
+					flex-col-center()
+					img
+						@extends .content-img
 			
 	.stone-type
 		position relative

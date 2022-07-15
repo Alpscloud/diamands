@@ -164,6 +164,16 @@ $(document).ready(function() {
 		]
 	});
 
+	if ($('.stone-type').length > 0) {
+		$('.stone-type').each(function() {
+			var column = $(this).find('.su-column:last-child');
+
+			column.find('p:first-child').addClass('stone-type__title');
+
+		});
+	}
+	
+
 	// ========= Ajax form ===========
 	$('.js-required-input').on('focus',function() {
 		var inputGroup = $(this).parents('.form-group');
